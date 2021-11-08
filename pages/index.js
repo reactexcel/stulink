@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import HomepageContainer from "../Components/Homepage/HomepageContainer";
 
 const Home = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <HomepageContainer />;
+};
 
 export default Home;

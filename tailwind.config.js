@@ -7,8 +7,12 @@ module.exports = {
         blue: {
           950: "#131921",
           850: "#232F3E",
+          550: "#29ABE2",
         },
       },
+      fontFamily: {
+        Poppins: ['Poppins'],
+      }
     },
   },
   variants: {

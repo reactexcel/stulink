@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { informationTechnology } from "../Common/Images";
 
-const CollegeExamCard = () => {
+const CollegeExamCard = ({key}) => {
   const [hover, setHover] = useState(false);
 
   return (

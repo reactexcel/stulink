@@ -7,7 +7,7 @@ import {
   longArrow,
 } from "../Common/Images";
 
-const CollegeCarouselCards = () => {
+const CollegeCarouselCards = ({key}) => {
   return (
     <>
       <div className=" flex flex-col rounded-xl mx-2 relative">

@@ -1,5 +1,5 @@
 import React from "react";
-import { arrowBlueDown, profile, rightLongArrowWhite } from "../Common/Images";
+import { arrowBlueDown, profile, rightLongArrowWhite, team } from "../Common/Images";
 
 const ChatRooms = () => {
   return (
@@ -13,8 +13,8 @@ const ChatRooms = () => {
       <div className="mt-4">
         {[1, 2, 3, 4, 5, 6, 7].map((value, index) => (
           <div key={index} className=" h-32 mx-4 my-2 border-b-2 ">
-            <div className="flex flex-row  ">
-              <img className="h-16 w-16" src={profile} />
+            <div className="flex flex-row items-center ">
+              <img className="px-2" src={team} />
               <div className="flex flex-col items-start mx-4 flex-1">
                 <div className="flex-row flex justify-between w-full">
                   <p className="font-semibold text-lg font-Poppins text-black ">

@@ -1,20 +1,45 @@
 import React from "react";
+import { longArrow } from "../Common/Images";
 
 const HelpData = [
   {
     title: "Ask a Question",
     description:
       "Lorem impsum dolor sit dolor sit amet consectetuer adipscing...",
+    img: "./img/headphone.svg",
   },
   {
     title: "Get a Answer",
     description:
       "Lorem impsum dolor sit dolor sit amet consectetuer adipscing...",
+    img: "./img/answer.png",
   },
   {
     title: "Rate your answer",
     description:
       "Lorem impsum dolor sit dolor sit amet consectetuer adipscing...",
+    img: "./img/rate.png",
+  },
+];
+
+const HelpData2 = [
+  {
+    title: "Courses",
+    description:
+      "Lorem impsum dolor sit dolor sit amet consectetuer adipscing...",
+    img: "./img/courses.png",
+  },
+  {
+    title: "Jobs",
+    description:
+      "Lorem impsum dolor sit dolor sit amet consectetuer adipscing...",
+    img: "./img/jobs.png",
+  },
+  {
+    title: "Colleges",
+    description:
+      "Lorem impsum dolor sit dolor sit amet consectetuer adipscing...",
+    img: "./img/colleges.png",
   },
 ];
 
@@ -24,14 +49,14 @@ const HelpCenter = () => {
       <p className="font-medium text-5xl font-Poppins text-black text-center">
         Help Center
       </p>
-      <div className="flex flex-row my-8 mx-12">
+      <div className="flex flex-row my-8">
         <div className="w-4/12 flex flex-col my-2 ">
           {HelpData.map((item, index) => {
             return (
               <div key={index} className="w-full h-28 mr-6 mb-2 ">
                 <div className="flex flex-row">
-                  <div className="flex flex-col w-20 h-16 ml-4 my-2 text-white justify-center items-center text-sm">
-                    <img />
+                  <div className="flex flex-col w-20 h-16 ml-4 -mt-2 text-white justify-center items-center text-sm">
+                    <img src={item.img} />
                   </div>
                   <div className="flex flex-col justify-center ml-3 flex-1">
                     <p className="font-semibold text-lg font-Poppins text-black mb-2">
@@ -48,10 +73,10 @@ const HelpCenter = () => {
               </div>
             );
           })}
-          <div className="ml-24 ">
+          <div className="ml-24">
             <button
               type="submit"
-              className="py-3 w-56  bg-blue-550 flex flex-row items-center justify-center rounded-sm transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100"
+              className="py-3 w-56  bg-blue-550 flex flex-row items-center justify-center rounded-sm transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
             >
               <p className="text-white font-Poppins font-medium text-base mr-3">
                 Ask Questions
@@ -60,16 +85,15 @@ const HelpCenter = () => {
           </div>
         </div>
         <div className="w-7/12 mx-10 flex flex-col    ">
-          {HelpData.map((item, index) => {
+          {HelpData2.map((item, index) => {
             return (
               <div
                 key={index}
                 className="w-full h-32 mr-6 mb-4  shadow-lg rounded-lg border hover:border-blue-500"
               >
                 <div className="flex flex-row">
-                  <div className="flex flex-col w-24 h-24  bg-blue-850 ml-4  my-5  text-white justify-center items-center text-sm">
-                    <div className="mb-2 font-semibold text-base">05</div>
-                    <div className="text-xs font-normal">JAN,2021</div>
+                  <div>
+                    <img src={item.img} className=" h-24 mx-6 w-30 my-4" />
                   </div>
                   <div className="flex flex-col justify-center ml-3 flex-1">
                     <p className="font-semibold text-lg font-Poppins">
@@ -78,9 +102,12 @@ const HelpCenter = () => {
                     <p className="font-normal	my-1 text-sm">
                       {item.description}
                     </p>
-                    <p className="font-semibold	text-sm my-1 text-blue-550">
-                      View All questions
-                    </p>
+                    <div className="flex flex-row items-center">
+                      <p className="font-semibold	text-sm my-1 text-blue-550 mr-2">
+                        View All questions
+                      </p>
+                      <img src={longArrow} />
+                    </div>
                   </div>
                 </div>
               </div>

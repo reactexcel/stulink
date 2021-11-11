@@ -22,6 +22,11 @@ export const profile = "./img/profile.svg"
 export const team = "./img/team.png"
 export const LatestNews = "./img/latestNews.png";
 export const person = "./icon/person.png";
+export const courses = "./img/courses.png"
+export const answer = "./img/answer.png"
+export const colleges = "./img/colleges.png"
+export const headphone = "./img/headphone.png"
+
 
 export const facebook = "./img/facebook.png";
 export const twitter = "./img/twitter.png";

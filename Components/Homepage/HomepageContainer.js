@@ -5,6 +5,7 @@ import CollegesExams from "./CollegesExams";
 import TrendingColleges from "./TrendingColleges";
 import PopularCourses from "./PopularCourses";
 import ExamUpdates from "./ExamUpdates";
+import Jobs from "./Jobs";
 
 const HomepageContainer = () => {
   return (
@@ -15,6 +16,7 @@ const HomepageContainer = () => {
       <TrendingColleges />
       <PopularCourses />
       <ExamUpdates />
+      <Jobs />
     </div>
   );
 };

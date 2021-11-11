@@ -28,3 +28,4 @@ export const twitter = "./img/twitter.png";
 export const linkedin = "./img/linkedin.png";
 export const playStore = "./img/playStore.png";
 export const appStore = "./img/appStore.png";
+export const institution = "./icon/institution.png";

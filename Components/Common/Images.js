@@ -20,3 +20,9 @@ export const calendar = "./icon/calendar.png";
 export const state = "./img/state.png";
 export const LatestNews = "./img/latestNews.png";
 export const person = "./icon/person.png";
+
+export const facebook = "./img/facebook.png";
+export const twitter = "./img/twitter.png";
+export const linkedin = "./img/linkedin.png";
+export const playStore = "./img/playStore.png";
+export const appStore = "./img/appStore.png";

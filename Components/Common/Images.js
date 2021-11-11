@@ -20,3 +20,5 @@ export const calendar = "./icon/calendar.png";
 export const state = "./img/state.png";
 export const profile = "./img/profile.svg"
 export const team = "./img/team.png"
+export const LatestNews = "./img/latestNews.png";
+export const person = "./icon/person.png";

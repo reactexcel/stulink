@@ -8,6 +8,7 @@ import ExamUpdates from "./ExamUpdates";
 import HelpCenter from "./HelpCenter";
 import Jobs from "./Jobs";
 import Features from "./Features";
+import LatestNews from "./LatestNew";
 
 const HomepageContainer = () => {
   return (
@@ -21,6 +22,7 @@ const HomepageContainer = () => {
       <Jobs />
       <Features/>
       <HelpCenter/>
+      <LatestNews />
     </div>
   );
 };

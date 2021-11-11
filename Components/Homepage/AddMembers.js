@@ -19,7 +19,7 @@ const AddMembers = () => {
                 <p className="text-sm text-gray-500 mb-1 ">
                   stunlink@sandeep singh randhawa
                 </p>
-                <h1 className="text-md  text-black">Chandigarh University</h1>
+                <h1 className="text-md  text-black uppercase">Chandigarh University</h1>
                 <button
                   type="submit"
                   className="py-1 px-6 my-2  bg-blue-550 flex flex-row items-center justify-center rounded-sm transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-100"

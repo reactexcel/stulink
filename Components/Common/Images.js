@@ -27,3 +27,9 @@ export const answer = "./img/answer.png"
 export const colleges = "./img/colleges.png"
 export const headphone = "./img/headphone.png"
 
+
+export const facebook = "./img/facebook.png";
+export const twitter = "./img/twitter.png";
+export const linkedin = "./img/linkedin.png";
+export const playStore = "./img/playStore.png";
+export const appStore = "./img/appStore.png";

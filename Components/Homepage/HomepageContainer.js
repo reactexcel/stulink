@@ -9,6 +9,7 @@ import HelpCenter from "./HelpCenter";
 import Jobs from "./Jobs";
 import Features from "./Features";
 import LatestNews from "./LatestNew";
+import Footer from "../Common/Footer";
 
 const HomepageContainer = () => {
   return (
@@ -23,6 +24,7 @@ const HomepageContainer = () => {
       <Features/>
       <HelpCenter/>
       <LatestNews />
+      <Footer />
     </div>
   );
 };

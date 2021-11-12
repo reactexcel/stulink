@@ -16,11 +16,17 @@ import { getHomepageDataRequest } from "../../Redux/action";
 
 const HomepageContainer = () => {
   const dispatch = useDispatch();
-  const state = useSelector(state=>state);
-  console.log(state,'_____________')
-  useEffect(()=>{
+  const { homepage } = useSelector((state) => state);
+
+  useEffect(() => {
     dispatch(getHomepageDataRequest());
-  },[])
+  }, []);
+
+  useEffect(() => {
+    if (homepage.isSuccess) {
+      console.log(homepage.homepageData, "_____________");
+    }
+  }, [homepage]);
   return (
     <div>
       <Head>

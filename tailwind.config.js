@@ -15,6 +15,9 @@ module.exports = {
         Poppins: ["Poppins"],
       },
     },
+    minHeight: {
+      99: "800px",
+    }
   },
   variants: {
     extend: {

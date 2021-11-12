@@ -12,9 +12,11 @@ const SignupContainer = () => {
         <title>Stulink | Signup</title>
       </Head>
       <Navbar />
-      <SignupTitle />
-      <SignupInputs />
-      <hr className="mt-20 mb-24"/>
+      <div className="">
+        <SignupTitle />
+        <SignupInputs />
+        <hr className="mt-20 mb-24" />
+      </div>
       <Footer />
     </div>
   );

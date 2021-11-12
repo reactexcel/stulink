@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Navbar from "../Common/Navbar";
 import WelcomeStulinks from "./WelcomeStulinks";
 import CollegesExams from "./CollegesExams";
@@ -14,6 +15,9 @@ import Footer from "../Common/Footer";
 const HomepageContainer = () => {
   return (
     <div>
+      <Head>
+        <title>Stulink</title>
+      </Head>
       <Navbar />
       <WelcomeStulinks />
       <CollegesExams />
@@ -21,8 +25,8 @@ const HomepageContainer = () => {
       <PopularCourses />
       <ExamUpdates />
       <Jobs />
-      <Features/>
-      <HelpCenter/>
+      <Features />
+      <HelpCenter />
       <LatestNews />
       <Footer />
     </div>

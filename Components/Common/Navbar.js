@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { logo, login, signup, home } from "./Images";
+import { useRouter } from 'next/router'
 
 const FirstSection = () => {
   return (
@@ -19,12 +20,17 @@ const FirstSection = () => {
 };
 
 const SecondSection = () => {
+  const router = useRouter();
   const [search, setSearch] = useState("");
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+  }
+
+  const handleSignup = () => {
+    router.push("/signup")
   }
   return (
     <div className="bg-blue-950">
@@ -54,7 +60,7 @@ const SecondSection = () => {
               />{" "}
               Login
             </button>
-            <button className="flex bg-white rounded-full text-2xl mx-2 py-2 px-4 transition duration-300 transform hover:-translate-y-1 hover:scale-105">
+            <button onClick={handleSignup} className="flex bg-white rounded-full text-2xl mx-2 py-2 px-4 transition duration-300 transform hover:-translate-y-1 hover:scale-105">
               <img
                 src={signup}
                 alt="signup"

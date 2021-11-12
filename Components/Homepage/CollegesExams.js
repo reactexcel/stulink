@@ -18,9 +18,11 @@ const CollegesExams = () => {
           </button>
         </div>
         <div className="grid grid-cols-5 mt-20 gap-10">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((value, index) => (
-            <CollegeExamCard key={index} />
-          ))}
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
+            (value, index) => {
+              return <div key={index}><CollegeExamCard /></div>;
+            }
+          )}
         </div>
       </div>
     </div>

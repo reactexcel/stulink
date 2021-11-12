@@ -8,16 +8,20 @@ module.exports = {
           950: "#131921",
           850: "#232F3E",
           550: "#29ABE2",
-          850: '#102731'
+          850: "#102731",
         },
       },
       fontFamily: {
-        Poppins: ['Poppins'],
-      }
+        Poppins: ["Poppins"],
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      opacity: ["disabled"],
+      bg: ["disabled"],
+      cursor: ["disabled"],
+    },
   },
   plugins: [],
 };

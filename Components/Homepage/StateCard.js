@@ -1,7 +1,7 @@
 import React from "react";
 import { state } from "../Common/Images";
 
-const StateCard = ({ value, key }) => {
+const StateCard = ({ value }) => {
   return (
     <>
       <div className="flex flex-col rounded-xl shadow-md items-center pb-10 cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">

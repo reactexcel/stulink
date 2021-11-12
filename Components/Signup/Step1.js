@@ -2,21 +2,34 @@ import React from "react";
 import { signupImage } from "../Common/Images";
 import StepsFlow from "./StepsFlow";
 
-export const Step1 = () => {
+const stepData = {
+  step_1: {
+    title: "Enter your personal number Details.",
+  },
+  step_2: {
+    title: "Select Username",
+  },
+  step_3: {
+    title: "Select Username",
+  },
+  step_4: {
+    title: "Find your Friends",
+  },
+  step_5: {
+    title: "Link hashtag",
+  },
+};
+
+export const Step1 = ({ step }) => {
   return (
     <div className="">
       <div className="my-8 border-2 rounded-xl">
         <div className="p-8">
-          <img
-            src={signupImage}
-            alt="Signup"
-            height="auto"
-            width="auto"
-          />
+          <img src={signupImage} alt="Signup" height="auto" width="auto" />
           <div className="my-6">
-          <p className="font-semibold text-2xl">Step 1</p>
-          <p className="text-2xl my-4">Enter your personal number Details.</p>
-          <StepsFlow />
+            <p className="font-semibold text-2xl">Step {step}</p>
+            <p className="text-2xl my-4">{stepData[`step_${step}`].title}</p>
+            <StepsFlow steps={step} />
           </div>
         </div>
       </div>
@@ -24,12 +37,13 @@ export const Step1 = () => {
   );
 };
 
-export const Step1Input = () => {
+export const Step1Input = ({ step, prev, next }) => {
+    console.log(step)
   return (
     <div className="shadow-2xl rounded-2xl">
       <div className="bg-blue-550 bg-opacity-10 px-8 py-12 rounded-t-2xl">
         <p className="text-blue-550 text-2xl font-semibold">
-          Enter your personal information
+          {stepData[`step_${step}`].title}
         </p>
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -69,10 +83,10 @@ export const Step1Input = () => {
           </div>
         </form>
         <div className="flex justify-between">
-          <button className="p-4 bg-gray-500 text-white rounded-xl w-44 transition duration-300 cursor-not-allowed hover:-translaye-y-1 hover:scale-105">
+          <button onClick={prev} disabled={step===1} className="p-4 bg-black disabled:bg-gray-500 disabled:opacity-50 text-white rounded-xl w-44 transition duration-300 disabled:cursor-not-allowed hover:-translaye-y-1 hover:scale-105">
             {"<<"} Previous
           </button>
-          <button className="p-4 bg-blue-550 text-white rounded-xl w-44 transition duration-300 transform hover:-translaye-y-1 hover:scale-105">
+          <button onClick={next} disabled={step===5} className="p-4 bg-blue-550 disabled:bg-gray-500 disabled:opacity-50 disabled:cursor-not-allowed text-white rounded-xl w-44 transition duration-300 transform hover:-translaye-y-1 hover:scale-105">
             Next {">>"}
           </button>
         </div>

@@ -38,10 +38,7 @@ const CarouselButton = ({ next, previous, goToSlide, ...rest }) => {
         >
           <img src={arrowLeft} />
         </button>
-        <button
-          className={`relative bottom-56 -mr-16`}
-          onClick={() => next()}
-        >
+        <button className={`relative bottom-56 -mr-16`} onClick={() => next()}>
           <img src={arrowRight} />
         </button>
       </div>
@@ -49,30 +46,34 @@ const CarouselButton = ({ next, previous, goToSlide, ...rest }) => {
   );
 };
 
-const TrendingCollegeCarousel = ({next, previous, goToSlide, ...rest}) => {
+const TrendingCollegeCarousel = ({ next, previous, goToSlide, ...rest }) => {
   return (
     <>
-    <div className="max-w-screen-xl mx-auto">
-      <Carousel
-      responsive={responsive}
-      swipeable={true}
-      arrows={false}
-      draggable={true}
-      showDots={false}
-      infinite={true}
-      keyBoardControl={false}
-      transitionDuration={500}
-      renderButtonGroupOutside
-      autoPlay
-      customButtonGroup={<CarouselButton />}
-      >
-        {[1,2,3,4,5,6,7,8,9,10].map((value, index)=>(
-          <CollegeCarouselCards key={index} />
-        ))}
-      </Carousel>
-    </div>
+      <div className="max-w-screen-xl mx-auto">
+        <Carousel
+          responsive={responsive}
+          swipeable={true}
+          arrows={false}
+          draggable={true}
+          showDots={false}
+          infinite={true}
+          keyBoardControl={false}
+          transitionDuration={500}
+          renderButtonGroupOutside
+          autoPlay
+          customButtonGroup={<CarouselButton />}
+        >
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((value, index) => {
+            return (
+              <div key={index}>
+                <CollegeCarouselCards />
+              </div>
+            );
+          })}
+        </Carousel>
+      </div>
     </>
   );
-}
+};
 
 export default TrendingCollegeCarousel;

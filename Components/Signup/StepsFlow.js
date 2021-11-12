@@ -7,11 +7,11 @@ const StepsFlow = ({ steps = 1 }) => {
       <div>
         <div
           className={`${
-            steps === step ? "text-blue-550" : "text-gray-500"
+            steps >= step ? "text-blue-550" : "text-gray-500"
           } text-opacity-80 flex my-auto`}
         >
           <p className={`${
-            steps === step ? "text-blue-550 border-blue-550" : "text-gray-500 border-gray-500"
+            steps >= step ? "text-blue-550 border-blue-550" : "text-gray-500 border-gray-500"
           } text-opacity-80 border-opacity-60 border-4 rounded-full mr-2 px-3 pb-1 my-auto`}>
             {step}
           </p>

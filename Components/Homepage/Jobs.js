@@ -20,9 +20,9 @@ const Jobs = () => {
         <div className="flex flex-col items-center">
           <p className="font-medium text-6xl font-Poppins text-black">Jobs</p>
           <div className="w-full grid grid-cols-5 gap-5 mt-10">
-            {data.map((value, index) => (
-              <StateCard value={value} key={index} />
-            ))}
+            {data.map((value, index) => {
+              return <div key={index}><StateCard value={value} key={index} /></div>;
+            })}
           </div>
         </div>
       </div>

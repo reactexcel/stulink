@@ -35,7 +35,7 @@ const SecondSection = () => {
   return (
     <div className="bg-blue-950">
       <div className="grid md:grid-cols-8 grid-cols-1 md:p-4 p-1 md:gap-4 gap-12">
-        <div className="col-span-2 my-auto">
+        <div className="col-span-2 my-auto mx-12">
           <a href="/">
           <img src={logo} alt="STULINK" height="41px" width="248px" />
           </a>

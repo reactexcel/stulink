@@ -9,7 +9,7 @@ const SignupTitle = () => {
       </p>
       <hr className="w-48 mx-auto bg-blue-550 border-b border-blue-550" />
       <p className="text-center my-6 font-medium text-xl">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt.
       </p>
     </div>

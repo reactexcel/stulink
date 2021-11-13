@@ -51,7 +51,7 @@ const AboutProfile = () => {
         </div>
         <div className="text-sm font-black">
           StulinkJames
-          <a href="mailto:Spiegel@gmail.com" target="_blank">
+          <a href="mailto:Spiegel@gmail.com">
             {" "}
             Spiegel@gmail.com
           </a>

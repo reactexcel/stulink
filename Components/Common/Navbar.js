@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { logo, login, signup, home } from "./Images";
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+import Link from 'next/link'
 
 const FirstSection = () => {
   return (
@@ -36,9 +37,9 @@ const SecondSection = () => {
     <div className="bg-blue-950">
       <div className="grid md:grid-cols-8 grid-cols-1 md:p-4 p-1 md:gap-4 gap-12">
         <div className="col-span-2 my-auto mx-12">
-          <a href="/">
+          <Link href="/">
           <img src={logo} alt="STULINK" height="41px" width="248px" />
-          </a>
+          </Link>
         </div>
         <div className="col-span-4 my-auto">
           <form onSubmit={handleSubmit}>

@@ -222,7 +222,7 @@ export const Step1Input = ({ step, prev, next }) => {
           {stepData[`step_${step}`]?.title}
         </p>
         <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt.
         </p>
       </div>

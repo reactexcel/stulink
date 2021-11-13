@@ -34,9 +34,9 @@ const HomepageContainer = () => {
       </Head>
       <Navbar />
       <WelcomeStulinks />
-      <CollegesExams />
-      <TrendingColleges />
-      <PopularCourses />
+      <CollegesExams collegeData={homepage?.homepageData?.collegeCountData} />
+      <TrendingColleges colleges={homepage?.homepageData?.trendingCollege} />
+      <PopularCourses courses={homepage?.homepageData?.courseDetailsData} />
       <ExamUpdates />
       <Jobs />
       <Features />

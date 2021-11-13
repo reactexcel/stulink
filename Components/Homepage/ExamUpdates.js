@@ -9,7 +9,7 @@ import {
 const ExamUpdates = () => {
   return (
     <>
-      <div className="max-w-screen-xl mx-auto my-32">
+      <div className="max-w-screen-xl mx-auto my-12">
         <div className="flex flex-col items-center">
           <p className="font-semibold text-2xl font-Poppins text-blue-550 mr-5">
             LATEST

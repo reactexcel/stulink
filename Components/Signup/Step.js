@@ -49,7 +49,6 @@ export const Step1Input = ({ step, prev, next }) => {
     hashtags: [],
   });
   const [error, setError] = useState("");
-  console.log(formData);
   const Tabs = ({ text }) => {
     const handleClick = () => {
       if (formData.hashtags.includes(text)) {
@@ -88,7 +87,6 @@ export const Step1Input = ({ step, prev, next }) => {
       !(formData.email || formData.mobile) ||
       (formData.mobile && formData.mobile.length !== 10)
     ) {
-      console.log("error");
       setError("Email or mobile number required");
     } else {
       next();

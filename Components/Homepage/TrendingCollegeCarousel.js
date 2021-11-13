@@ -46,11 +46,11 @@ const CarouselButton = ({ next, previous, goToSlide, ...rest }) => {
   );
 };
 
-const TrendingCollegeCarousel = ({ next, previous, goToSlide, ...rest }) => {
+const TrendingCollegeCarousel = ({ colleges, next, previous, goToSlide, ...rest }) => {
   return (
     <>
       <div className="max-w-screen-xl mx-auto">
-        <Carousel
+        {colleges?.data &&<Carousel
           responsive={responsive}
           swipeable={true}
           arrows={false}
@@ -63,14 +63,14 @@ const TrendingCollegeCarousel = ({ next, previous, goToSlide, ...rest }) => {
           autoPlay
           customButtonGroup={<CarouselButton />}
         >
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((value, index) => {
+          {colleges && colleges?.data && colleges?.data?.map((college, index) => {
             return (
               <div key={index}>
-                <CollegeCarouselCards />
+                <CollegeCarouselCards college={college} />
               </div>
             );
           })}
-        </Carousel>
+        </Carousel>}
       </div>
     </>
   );

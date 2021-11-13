@@ -14,6 +14,11 @@ module.exports = {
       fontFamily: {
         Poppins: ["Poppins"],
       },
+      fontSize:{
+        text:{
+          28:"28px"
+        }
+      },
     },
     minHeight: {
       99: "800px",

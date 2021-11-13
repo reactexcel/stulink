@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import PopularCoursesTab from "./PopularCoursesTab";
 import PopularCoursesTags from "./PopularCoursesTags";
 
-const PopularCourses = () => {
+const PopularCourses = ({ courses }) => {
+  const [filterCategory, setFilterCategory] = useState("All");
   return (
     <>
-      <div className="max-w-screen-xl mx-auto my-32">
+      <div className="max-w-screen-xl mx-auto my-12">
         <div className="flex flex-col items-center">
           <p className="font-semibold text-2xl font-Poppins text-blue-550 mr-5">
             POPULAR
@@ -13,8 +14,8 @@ const PopularCourses = () => {
           <p className="font-medium text-6xl font-Poppins text-black">
             Courses
           </p>
-          <PopularCoursesTab />
-          <PopularCoursesTags />
+          <PopularCoursesTab setFilterCategory={setFilterCategory} filterCategory={filterCategory} />
+          <PopularCoursesTags courses={courses} filterCategory={filterCategory} />
         </div>
       </div>
     </>

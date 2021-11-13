@@ -1,7 +1,7 @@
 import React from "react";
 import CollegeExamCard from "./CollegeExamCard";
 
-const CollegesExams = () => {
+const CollegesExams = ({ collegeData }) => {
   return (
     <div className="w-full flex justify-center">
       <div className="flex flex-col items-center">
@@ -18,9 +18,9 @@ const CollegesExams = () => {
           </button>
         </div>
         <div className="grid grid-cols-5 mt-20 gap-10">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map(
+          {collegeData && collegeData?.data && collegeData?.data?.map(
             (value, index) => {
-              return <div key={index}><CollegeExamCard /></div>;
+              return <div key={index}><CollegeExamCard data={value} /></div>;
             }
           )}
         </div>

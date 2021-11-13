@@ -4,6 +4,7 @@ export const informationTechnology = "/img/informationTechnology.png";
 export const college = "/img/college.png";
 export const signupImage = "/img/signupImg.png";
 export const stepLine = "/img/step-line.png";
+export const profileImg = "/img/profileImg.png";
 //Icons
 export const login = "/icon/login.png";
 export const signup = "/icon/signup.png";
@@ -27,7 +28,7 @@ export const courses = "./img/courses.png";
 export const answer = "./img/answer.png";
 export const colleges = "./img/colleges.png";
 export const headphone = "./img/headphone.png";
-
+export const checkIcon = "/img/check-icon.svg";
 export const facebook = "./img/facebook.png";
 export const twitter = "./img/twitter.png";
 export const linkedin = "./img/linkedin.png";

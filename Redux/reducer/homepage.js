@@ -4,6 +4,7 @@ const initialState = {
   isLoading: false,
   isSuccess: false,
   isError: false,
+  homepageData: {}
 };
 
 const homepage = (state = initialState, action) => {

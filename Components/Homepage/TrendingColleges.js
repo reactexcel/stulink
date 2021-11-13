@@ -1,7 +1,7 @@
 import React from "react";
 import TrendingCollegeCarousel from "./TrendingCollegeCarousel";
 
-const TrendingColleges = () => {
+const TrendingColleges = ({colleges}) => {
   return (
     <>
       <div className="max-w-screen-xl mx-auto">
@@ -13,7 +13,7 @@ const TrendingColleges = () => {
             Colleges
           </p>
         </div>
-        <TrendingCollegeCarousel />
+        <TrendingCollegeCarousel colleges={colleges} />
       </div>
     </>
   );

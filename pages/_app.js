@@ -6,7 +6,9 @@ import "../styles/styles.scss";
 function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
+      <div className="font-Poppins">
       <Component {...pageProps} />
+      </div>
     </Provider>
   )
 }

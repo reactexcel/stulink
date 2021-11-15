@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
 import NotificationContainer from '../../Components/Notifications/NotificationContainer';
+import Navbar from '../../Components/Common/Navbar';
+import Footer from '../../Components/Common/Footer';
 
 const Notifications = () => {
     return(
@@ -10,7 +12,9 @@ const Notifications = () => {
                     Notifications | Stulink
                 </title>
             </Head>
+            <Navbar />
             <NotificationContainer />
+            <Footer />
         </div>
     )
 }

@@ -3,7 +3,7 @@ import { twitter, facebook, linkedin, appStore, playStore } from "./Images";
 
 const Footer = () => {
   return (
-    <>
+    <div className="border-t pt-12">
       <div className="max-w-screen-xl mx-auto grid grid-cols-4 mt-20">
         <div className="">
           <div className="flex flex-col mb-16">
@@ -111,7 +111,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

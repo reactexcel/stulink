@@ -5,7 +5,7 @@ const FilterChecklist = ({ data }) => {
     <div>
       {data.map((item, index) => {
         return (
-          <label className="custom-label flex mt-1 ml-3 py-1">
+          <label key={index} className="custom-label flex mt-1 ml-3 py-1">
             <div className="bg-white border   w-5 shadow-lg h-5 p-1 flex justify-center items-center mr-2">
               <input type="checkbox" className="hidden" checked />
               <svg
@@ -21,6 +21,7 @@ const FilterChecklist = ({ data }) => {
                   fontSize="none"
                   textAnchor="none"
                   style={{ mixBlendMode: "normal" }}
+                  key={index}
                 >
                   <path d="M0 172V0h172v172z" />
                   <path

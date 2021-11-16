@@ -14,7 +14,7 @@ const EditProfile = () => {
       </p>
       <div className="p-8 2xl:mx-80 lg:mx-24 mx-2">
         <div className="flex justify-center">
-          <img src={profileImg} height="auto" width="225px" />
+          <img src={profileImg} height="auto" width="225px" alt="progileImage"/>
         </div>
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-2 gap-4">

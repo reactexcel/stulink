@@ -30,7 +30,7 @@ const ProfileMessagePopup = () => {
         <div className=" rounded-lg w-80 h-auto absolute bg-white shadow">
             <div className="h-1 w-1 z-50 bg-white p-2 relative mx-auto -mt-1.5 transform rotate-45" />
             <div className="flex justify-between p-2.5">
-                <span className="text-xs">Notifications</span>
+                <span className="text-xs">Message</span>
                 <span className="text-xs">Settings</span>
             </div>
             <hr></hr>

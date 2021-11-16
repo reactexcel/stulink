@@ -6,7 +6,7 @@ const FilterChecklist = ({ data }) => {
       {data.map((item, index) => {
         return (
           <label className="custom-label flex mt-1 ml-3 py-1">
-            <div className="bg-white border  w-5 shadow-lg h-5 p-1 flex justify-center items-center mr-2">
+            <div className="bg-white border   w-5 shadow-lg h-5 p-1 flex justify-center items-center mr-2">
               <input type="checkbox" className="hidden" checked />
               <svg
                 className="hidden w-4 h-6 text-green-600 pointer-events-none"

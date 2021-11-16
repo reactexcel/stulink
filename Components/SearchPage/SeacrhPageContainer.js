@@ -8,7 +8,7 @@ import SearchPageHeader from "./SearchPageHeader";
 
 const SearchPageContainer = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100  ">
       <Head>
         <title>Search</title>
       </Head>

@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchPageHeader = () => {
   return (
-    <div className="max-w-screen-xl mx-auto  my-12">
+    <div className="mx-12  my-12">
       <div class="grid grid-cols-3 items-center gap-20  ">
         <div class="max-w-lg h-50 bg-white rounded-xl text-center shadow-xl border-gray-300 p-6  ">
           <h4 id="name" class="text-xl font-semibold my-4 h-12">

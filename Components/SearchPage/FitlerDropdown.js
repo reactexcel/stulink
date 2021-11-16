@@ -2,8 +2,8 @@ import React from "react";
 
 const FilterDropdown = () => {
   return (
-    <div className="group inline-block">
-      <select className="outline-none focus:outline-none border px-3 py-1 bg-white rounded-sm flex items-center min-w-32">
+    <div className="group inline-block mx-4">
+      <select className="outline-none focus:outline-none border px-3 py-1 bg-white rounded-sm flex items-center w-64">
         <span className="pr-1 font-semibold flex-1">Default Value</span>
         <span>
           <svg
@@ -15,7 +15,9 @@ const FilterDropdown = () => {
             <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
           </svg>
         </span>
-        <option className="rounded-sm bg-grey-500 px-3 py-1 hover:bg-gray-100">Fees</option>
+        <option className="rounded-sm bg-grey-500 px-3 py-1 hover:bg-gray-100">
+          Fees
+        </option>
         <option className="rounded-sm px-3 py-1 hover:bg-gray-100">
           Newest
         </option>

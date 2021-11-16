@@ -8,21 +8,21 @@ const MessageSettings = () => {
        
       <div className="mt-14">
        <p className="text-xl font-black font-Poppins">
-       i'd like to receive emails and updates from Stulink about
+       i would like to receive emails and updates from Stulink about
        </p>
 
        <div className="flex flex-wrap flex-col mt-4">
-       <label class="items-center block">
+       <label className="items-center block">
        <input type="checkbox" name="personal email" value="personal email"/>
         <span className="ml-2 text-xl text-gray-400">Always General announcement, updates, posts, and videos.</span>
      </label>
 
-    <label class="items-center block mt-4">
+    <label className="items-center block mt-4">
       <input type="checkbox" name="service email" value="service announcements"/>
       <span className="ml-2 text-xl text-gray-400">Personalise tips for my page.</span>
      </label>
 
-     <label class="items-center block mt-4">
+     <label className="items-center block mt-4">
       <input type="checkbox" name="service email" value="service announcements"/>
       <span className="ml-2 text-xl text-gray-400">Announcements and recommendations</span>
      </label>
@@ -36,28 +36,28 @@ const MessageSettings = () => {
        </p>
 
        <div className="flex flex-wrap flex-col mt-4">
-       <label class="items-center block">
+       <label className="items-center block">
        <input type="checkbox" name="personal email" value="personal email"/>
         <span className="ml-2 text-xl text-gray-400">From Recommended videos.</span>
      </label>
 
-    <label class="items-center block mt-4">
+    <label className="items-center block mt-4">
       <input type="checkbox" name="service email" value="service announcements"/>
       <span className="ml-2 text-xl text-gray-400">Messages from activity on my page or channel</span>
      </label>
 
-     <label class="items-center block mt-4">
+     <label className="items-center block mt-4">
       <input type="checkbox" name="service email" value="service announcements"/>
       <span className="ml-2 text-xl text-gray-400">Message me the replyer Activity on my comments</span>
      </label>
        
 
-       <label class="items-center block mt-4">
+       <label className="items-center block mt-4">
       <input type="checkbox" name="service email" value="service announcements"/>
       <span className="ml-2 text-xl text-gray-400">Reply to comments</span>
      </label>
        
-     <label class="items-center block mt-4">
+     <label className="items-center block mt-4">
       <input type="checkbox" name="service email" value="service announcements"/>
       <span className="ml-2 text-xl text-gray-400">Mentions.</span>
      </label>

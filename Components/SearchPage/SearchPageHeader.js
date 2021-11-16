@@ -3,23 +3,23 @@ import React from "react";
 const SearchPageHeader = () => {
   return (
     <div className="mx-12  my-12">
-      <div class="grid grid-cols-3 items-center gap-20  ">
-        <div class="max-w-lg h-50 bg-white rounded-xl text-center shadow-xl border-gray-300 p-6  ">
-          <h4 id="name" class="text-xl font-semibold my-4 h-12">
+      <div className="grid grid-cols-3 items-center gap-20  ">
+        <div className="max-w-lg h-50 bg-white rounded-xl text-center shadow-xl border-gray-300 p-6  ">
+          <h4 id="name" className="text-xl font-semibold my-4 h-12">
             Top MBA College In India 2021
           </h4>
-          <p class="text-black text-sm">
+          <p className="text-black text-sm">
             Find out scholership calender in india
           </p>
-          <p class="text-gray-500 underline font-semibold text-lg uppercase my-4 cursur pointer">
+          <p className="text-gray-500 underline font-semibold text-lg uppercase my-4 cursur pointer">
             see more details
           </p>
         </div>
 
-        <div class="max-w-lg h-50 bg-white rounded-xl text-center shadow-xl border-gray-300 p-6 ">
+        <div className="max-w-lg h-50 bg-white rounded-xl text-center shadow-xl border-gray-300 p-6 ">
           <button
             id="name"
-            class="text-xl font-semibold  mx-auto  cursor-pointer  mt-4 "
+            className="text-xl font-semibold  mx-auto  cursor-pointer  mt-4 "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -34,8 +34,8 @@ const SearchPageHeader = () => {
               />
             </svg>
           </button>
-          <p class="text-black text-lg font-bold">ADD APPLICATION</p>
-          <p class="text-black text-sm my-1">
+          <p className="text-black text-lg font-bold">ADD APPLICATION</p>
+          <p className="text-black text-sm my-1">
             Will Supporting text below as a natural
           </p>
           <button
@@ -48,14 +48,14 @@ const SearchPageHeader = () => {
           </button>
         </div>
 
-        <div class="max-w-lg h-50 bg-white rounded-xl text-center shadow-xl border-gray-300 p-6 ">
-          <h4 id="name" class="text-xl font-semibold h-12 my-4">
+        <div className="max-w-lg h-50 bg-white rounded-xl text-center shadow-xl border-gray-300 p-6 ">
+          <h4 id="name" className="text-xl font-semibold h-12 my-4">
             Find out scholership calender in india 2021
           </h4>
-          <p class="text-black text-sm">
+          <p className="text-black text-sm">
             Find out scholership calender in india
           </p>
-          <p class="text-gray-500 underline font-semibold text-lg uppercase my-4 cursor-pointer">
+          <p className="text-gray-500 underline font-semibold text-lg uppercase my-4 cursor-pointer">
             see more details
           </p>
         </div>

@@ -6,12 +6,12 @@ const EducationSettings = () => {
       <p className="font-black text-3xl">Education</p>
      <div className="w-3/4">   
      <div className="flex flex-wrap flex-col mt-12">
-       <label class="items-center block">
+       <label className="items-center block">
        <input type="checkbox" name="personal email" value="personal email"/>
         <span className="ml-4 text-xl text-gray-400">Graduate</span>
      </label>
 
-    <label class="items-center block mt-4">
+    <label className="items-center block mt-4">
       <input type="checkbox" name="service email" value="service announcements"/>
       <span className="ml-4 text-xl text-gray-400">Masters</span>
      </label>

@@ -41,7 +41,7 @@ const UnlinkedProfileRow  = () =>
   return (
     <div className="grid grid-cols-10 mt-4 mx-4 border-b py-2">
         <div className="col-span-2">
-                <img src={profile} alt="profilePic" class="h-8 w-8" />
+                <img src={profile} alt="profilePic" className="h-8 w-8" />
            </div>
            <div className="col-span-6">
            <p className="font-bold text-sm">Alex Khotanras</p>
@@ -72,10 +72,10 @@ const UnlinkedProfileRow  = () =>
 const FindRequestPopup = () =>
 {
     return(
-      <div class=" rounded-lg w-80 h-auto absolute bg-white shadow">
+      <div className=" rounded-lg w-80 h-auto absolute bg-white shadow">
       <div className="h-1 w-1 z-50 bg-white p-2 relative mx-auto -mt-1.5 transform rotate-45" />
-      <div class="flex justify-end p-2.5">
-            <span class="text-xs">Settings</span>
+      <div className="flex justify-end p-2.5">
+            <span className="text-xs">Settings</span>
         </div>
         <hr></hr>
         <ProfileRow/>

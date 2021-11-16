@@ -10,6 +10,9 @@ module.exports = {
           550: "#29ABE2",
           850: "#102731",
         },
+        green: {
+          550: "#1DB954"
+        }
       },
       fontFamily: {
         Poppins: ["Poppins"],

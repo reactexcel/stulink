@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { logo, login, signup, home } from "./Images";
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
+import FindRequestPopup from "./FindRequestPopup";
+import NotificationPopup from "./NotificationPopup";
+import ProfileMessagePopup from "./ProfileMessagePopup"
 import Link from "next/link";
 
 const FirstSection = () => {
@@ -141,6 +144,9 @@ const Navbar = ({ isLoggedin = true }) => {
       <FirstSection />
       <SecondSection isLoggedin={isLoggedin} />
       <ThirdSection />
+      {/* <FindRequestPopup/> */}
+      {/* <NotificationPopup/>
+      <ProfileMessagePopup/> */}
     </div>
   );
 };

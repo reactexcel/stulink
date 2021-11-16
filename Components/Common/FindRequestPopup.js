@@ -9,7 +9,7 @@ const ProfileRow  = () =>
   return (
     <div className="grid grid-cols-10 mt-4 mx-4 border-b py-2">
         <div className="col-span-2">
-                <img src={profile} alt="profilePic" class="h-8 w-8" />
+                <img src={profile} alt="profilePic" className="h-8 w-8" />
            </div>
            <div className="col-span-6">
            <p className="font-bold text-sm">Alex Khotanras</p>

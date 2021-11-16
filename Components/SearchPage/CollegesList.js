@@ -1,4 +1,4 @@
-import React, {useState}  from "react";
+import React, { useState } from "react";
 import CollegeCardGrid from "./CollegeCardGrid";
 import CollegeCard from "./CollegesCard";
 import FilterDropdown from "./FitlerDropdown";
@@ -18,19 +18,23 @@ const CollegesList = () => {
           <FilterDropdown />
         </div>
         <div className="bg-gray-200 ml-2 col-span-2">
-          <ViewCardList  listView={listView} setListView={setListView} />
+          <ViewCardList listView={listView} setListView={setListView} />
         </div>
       </div>
       {listView ? (
         <div className="flex flex-col ">
           {[1, 2, 3, 4, 5].map((value, index) => (
-            <CollegeCard />
+            <div key={index}>
+              <CollegeCard />
+            </div>
           ))}
         </div>
       ) : (
         <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3  mb-10  gap-1">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((value, index) => (
-            <CollegeCardGrid />
+            <div key={index}>
+              <CollegeCardGrid />
+            </div>
           ))}
         </div>
       )}

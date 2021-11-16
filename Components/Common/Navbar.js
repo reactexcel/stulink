@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { logo, login, signup, home } from "./Images";
 import { useRouter } from 'next/router';
 import Link from 'next/link'
+import FindRequestPopup from "./FindRequestPopup";
+import NotificationPopup from "./NotificationPopup";
+import ProfileMessagePopup from "./ProfileMessagePopup"
 
 const FirstSection = () => {
   return (
@@ -126,6 +129,9 @@ const Navbar = () => {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
+      <FindRequestPopup/>
+      {/* <NotificationPopup/>
+      <ProfileMessagePopup/> */}
     </div>
   );
 };

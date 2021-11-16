@@ -35,3 +35,10 @@ export const linkedin = "./img/linkedin.png";
 export const playStore = "./img/playStore.png";
 export const appStore = "./img/appStore.png";
 export const institution = "./icon/institution.png";
+export const Linked = "./img/linked.png";
+export const menuIcon = "./img/menuIcon.png";
+export const commentIcon = "./img/commentIcon.png";
+export const unsavedProfile = "./img/unsavedProfile.png"
+export const unlinkedIcon = "./img/unlinkedIcon.png"
+export const institutionBlue = "./icon/institutionBlue.png"
+

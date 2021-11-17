@@ -15,6 +15,7 @@ const ProfileTabs = () => {
   const handleActive = (tab) => {
     setActive(tab);
   };
+  
   const Tabs = ({ tab }) => {
     return (
       <button

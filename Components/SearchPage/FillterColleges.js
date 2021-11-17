@@ -8,9 +8,8 @@ const degrees = ["Undergraduate", "Post Graduate", "PHD", "Masters"];
 const badges = ["Punjab", "Amritsar", "Underraduate"];
 
 const FilterColleges = () => {
-  
   return (
-    <div className="flex flex-col px-4 p-2  " >
+    <div className="flex flex-col px-4 p-2  ">
       <div className="flex flex-row justify-start mt-2 ">
         <p className="font-semibold text-lg font-Poppins ">
           Find Your <q className="text-blue-550">Dream</q> College

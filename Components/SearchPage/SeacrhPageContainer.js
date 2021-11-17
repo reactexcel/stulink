@@ -10,7 +10,7 @@ const SearchPageContainer = () => {
   return (
     <div className="bg-gray-100  ">
       <Head>
-        <title>Search</title>
+        <title>Stunlink | Search </title>
       </Head>
       <Navbar />
       <SearchPageHeader />

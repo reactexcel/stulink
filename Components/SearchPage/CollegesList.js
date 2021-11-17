@@ -21,6 +21,7 @@ const CollegesList = () => {
           <ViewCardList  listView={listView} setListView={setListView} />
         </div>
       </div>
+      
       {listView ? (
         <div className="flex flex-col ">
           {[1, 2, 3, 4, 5].map((value, index) => (

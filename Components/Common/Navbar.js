@@ -86,13 +86,19 @@ const SecondSection = ({ isLoggedin }) => {
             <div className="flex justify-between">
               <div className="flex justify-between w-2/3 px-8 my-auto text-white">
                 <div>
-                  <button onClick={() => setPopup("friends")}>F</button>
+                  <button onClick={() => setPopup("friends")}>
+                    <img src="/img/friends-icon.png" alt="" />
+                  </button>
                 </div>
                 <div>
-                  <button onClick={() => setPopup("notification")}>N</button>
+                  <button onClick={() => setPopup("notification")}>
+                    <img src="/img/notification-icon-navbar.png" alt="" />
+                  </button>
                 </div>
                 <div>
-                  <button onClick={() => setPopup("messages")}>M</button>
+                  <button onClick={() => setPopup("messages")}>
+                    <img src="/img/message-icon-navbar.png" alt="" />
+                  </button>
                 </div>
               </div>
               <div className="flex">
@@ -154,9 +160,11 @@ const ThirdSection = () => {
             height="auto"
           />
         </Link>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
-          Colleges
-        </p>
+        <Link href="/college">
+          <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+            Colleges
+          </p>
+        </Link>
         <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
           Exam
         </p>
@@ -172,9 +180,11 @@ const ThirdSection = () => {
         <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
           Chat Room
         </p>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
-          Member
-        </p>
+        <Link href="/members">
+          <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+            Member
+          </p>
+        </Link>
         <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
           Help Center
         </p>

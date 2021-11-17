@@ -23,16 +23,19 @@ module.exports = {
         }
       },
     },
+    
     minHeight: {
       99: "800px",
-    }
+    },
+    
   },
   variants: {
     extend: {
       opacity: ["disabled"],
-      bg: ["disabled"],
+      backgroundColor: ["disabled", "checked"],
       cursor: ["disabled"],
     },
+     
   },
   plugins: [],
 };

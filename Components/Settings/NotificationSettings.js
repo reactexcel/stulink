@@ -4,7 +4,7 @@ const NotificationSettings = () => {
   return (
     <div className="shadow p-12">
       <p className="font-black text-3xl">Notification Settings</p>
-      <p className="text-xl text-gray-400">Select push and email notifications you would like to receive.</p>
+      <p className="text-xl text-gray-400 mt-3">Select push and email notifications you would like to receive.</p>
         {/* <div>
           <p className="text-2xl text-black">Notification Setting</p>
           <p className="text-lg text-gray-400">Select push and email notifications you'd like to receive.</p>

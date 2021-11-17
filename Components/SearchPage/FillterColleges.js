@@ -17,8 +17,10 @@ const FilterColleges = () => {
       </div>
       <hr className="bg-blue-550 font-bold w-2/4 text-blue-550 h-0.5 my-3" />
       <div className="my-4 flex flex-row flex-wrap max-w-lg">
-        {badges.map((item) => (
-          <FIlterBadge data={item} />
+        {badges.map((item, index) => (
+          <div key={index}>
+            <FIlterBadge data={item} />
+          </div>
         ))}
       </div>
 

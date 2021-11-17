@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { logo, login, signup, home } from "./Images";
 import { useRouter } from 'next/router';
-import Link from 'next/link'
+import FindRequestPopup from "./FindRequestPopup";
+import NotificationPopup from "./NotificationPopup";
+import ProfileMessagePopup from "./ProfileMessagePopup"
+import Link from "next/link";
 
 const FirstSection = () => {
   return (
@@ -20,7 +23,7 @@ const FirstSection = () => {
   );
 };
 
-const SecondSection = () => {
+const SecondSection = ({ isLoggedin }) => {
   const router = useRouter();
   const [search, setSearch] = useState("");
   const handleSearch = (e) => {
@@ -28,17 +31,17 @@ const SecondSection = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-  }
+  };
 
   const handleSignup = () => {
-    router.push("/signup")
-  }
+    router.push("/signup");
+  };
   return (
     <div className="bg-blue-950">
       <div className="grid md:grid-cols-8 grid-cols-1 md:p-4 p-1 md:gap-4 gap-12">
         <div className="col-span-2 my-auto mx-12">
           <Link href="/">
-          <img src={logo} alt="STULINK" height="41px" width="248px" />
+            <img src={logo} alt="STULINK" height="41px" width="248px" />
           </Link>
         </div>
         <div className="col-span-4 my-auto">
@@ -52,7 +55,7 @@ const SecondSection = () => {
           </form>
         </div>
         <div className="col-span-2 my-auto">
-          <div className="flex justify-center">
+          {!isLoggedin ? <div className="flex justify-center">
             <button className="flex text-white border border-white rounded-full text-2xl mx-2 py-2 px-4 transition duration-300 transform hover:-translate-y-1 hover:scale-105">
               <img
                 src={login}
@@ -63,7 +66,10 @@ const SecondSection = () => {
               />{" "}
               Login
             </button>
-            <button onClick={handleSignup} className="flex bg-white rounded-full text-2xl mx-2 py-2 px-4 transition duration-300 transform hover:-translate-y-1 hover:scale-105">
+            <button
+              onClick={handleSignup}
+              className="flex bg-white rounded-full text-2xl mx-2 py-2 px-4 transition duration-300 transform hover:-translate-y-1 hover:scale-105"
+            >
               <img
                 src={signup}
                 alt="signup"
@@ -73,7 +79,19 @@ const SecondSection = () => {
               />{" "}
               Signup
             </button>
+          </div> :
+          <div className="flex justify-between">
+            <div className="flex justify-between w-2/3 px-8 my-auto text-white">
+              <Link href="/profile/find-request">F</Link>
+              <Link href="/profile/notifications">N</Link>
+              <Link href="/members">M</Link>
+            </div>
+            <div className="flex">
+            <Link href="/settings"><img src="/img/profileImg.png" alt="profile" height="auto" width="65px" className="cursor-pointer" /></Link>
+            <p className="text-white my-auto mx-4 font-black text-xl">James</p>
+            </div>
           </div>
+          }
         </div>
       </div>
     </div>
@@ -120,12 +138,15 @@ const ThirdSection = () => {
   );
 };
 
-const Navbar = () => {
+const Navbar = ({ isLoggedin = true }) => {
   return (
     <div>
       <FirstSection />
-      <SecondSection />
+      <SecondSection isLoggedin={isLoggedin} />
       <ThirdSection />
+      {/* <FindRequestPopup/> */}
+      {/* <NotificationPopup/>
+      <ProfileMessagePopup/> */}
     </div>
   );
 };

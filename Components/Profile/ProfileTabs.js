@@ -1,13 +1,40 @@
 import React, { useState } from "react";
+import GalleryContainer from "./GalleryContainer";
+import LikeContainer from "./LikeContainer";
 import PostContainer from "./PostContainer";
+import ReplyContainer from "./ReplyContainer";
 
 const tabs = [
-  { title: "Post", img: "/img/post-icon.svg", activeImg: "/img/post-icon-active.png" },
-  { title: "Reply", img: "/img/reply-icon.png", activeImg: "/img/reply-icon-active.png" },
-  { title: "Like", img: "/img/like-icon.png", activeImg: "/img/like-icon-active.png" },
-  { title: "Repost", img: "/img/repost-icon.png", activeImg: "/img/repost-icon-active.png" },
-  { title: "Gallery", img: "/img/gallery-icon.png", activeImg: "/img/gallery-icon-active.png" },
-  { title: "Topic", img: "/img/topic-icon.png", activeImg: "/img/topic-icon.png" },
+  {
+    title: "Post",
+    img: "/img/post-icon.svg",
+    activeImg: "/img/post-icon-active.png",
+  },
+  {
+    title: "Reply",
+    img: "/img/reply-icon.png",
+    activeImg: "/img/reply-icon-active.png",
+  },
+  {
+    title: "Like",
+    img: "/img/like-icon.png",
+    activeImg: "/img/like-icon-active.png",
+  },
+  {
+    title: "Repost",
+    img: "/img/repost-icon.png",
+    activeImg: "/img/repost-icon-active.png",
+  },
+  {
+    title: "Gallery",
+    img: "/img/gallery-icon.png",
+    activeImg: "/img/gallery-icon-active.png",
+  },
+  {
+    title: "Topic",
+    img: "/img/topic-icon.png",
+    activeImg: "/img/topic-icon.png",
+  },
 ];
 
 const ProfileTabs = () => {
@@ -24,7 +51,13 @@ const ProfileTabs = () => {
           active === tab.title ? "border-b-4 border-blue-550 text-blue-550" : ""
         } pb-4`}
       >
-          <img src={active === tab.title ? tab.activeImg : tab.img} alt="" height="auto" width="20px" className="my-auto mr-3" />
+        <img
+          src={active === tab.title ? tab.activeImg : tab.img}
+          alt=""
+          height="auto"
+          width="20px"
+          className="my-auto mr-3"
+        />
         {tab.title}
       </button>
     );
@@ -40,7 +73,12 @@ const ProfileTabs = () => {
           );
         })}
       </div>
+      {console.log(active)}
       {active === "Post" && <PostContainer />}
+      {active === "Like" && <LikeContainer />}
+      {active === "Gallery" && <GalleryContainer />}
+      {active === "Reply" && <ReplyContainer />}
+      {active === "Repost" && <ReplyContainer />}
     </div>
   );
 };

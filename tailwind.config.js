@@ -10,6 +10,9 @@ module.exports = {
           550: "#29ABE2",
           850: "#102731",
         },
+        green: {
+          550: "#1DB954"
+        }
       },
       fontFamily: {
         Poppins: ["Poppins"],
@@ -20,16 +23,19 @@ module.exports = {
         }
       },
     },
+    
     minHeight: {
       99: "800px",
-    }
+    },
+    
   },
   variants: {
     extend: {
       opacity: ["disabled"],
-      bg: ["disabled"],
+      backgroundColor: ["disabled", "checked"],
       cursor: ["disabled"],
     },
+     
   },
   plugins: [],
 };

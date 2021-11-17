@@ -3,7 +3,7 @@ import { college } from "../Common/Images";
 
 const CollegeCardGrid = () => {
   return (
-    <div class="overflow-hidden w-11/12 my-2 mx-auto">
+    <div className="overflow-hidden w-11/12 my-2 mx-auto">
       <div className="">
         <p className="absolute  font-semibold text-sm text-blue-550 p-2 font-Poppins">
           Featured college

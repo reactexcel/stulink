@@ -12,7 +12,10 @@ module.exports = {
         },
         green: {
           550: "#1DB954"
-        }
+        },
+        gray: {
+          450: "#797979"
+        },
       },
       fontFamily: {
         Poppins: ["Poppins"],

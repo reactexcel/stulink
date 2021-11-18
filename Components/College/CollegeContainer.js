@@ -5,6 +5,7 @@ import Navbar from "../Common/Navbar";
 import CollegeTitle from "./CollegeTitle";
 import CollegeTabs from "./CollegeTabs";
 import InformationContainer from "./InformationContainer";
+import CoursesContainer from "./CoursesContainer";
 import TrendingAdmissions from "./TrendingAdmissions";
 import StudentsViewed from "./StudentsViewed";
 
@@ -21,6 +22,7 @@ const CollegeContainer = () => {
       <div className="grid grid-cols-7 gap-5 mx-12">
         <div className="col-span-5">
           {tab === "Information" && <InformationContainer />}
+          {tab  ==="Courses" && <CoursesContainer/>}
         </div>
         <div className="col-span-2">
           <TrendingAdmissions />

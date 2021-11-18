@@ -95,16 +95,10 @@ const CoursesContainer = () => {
                         <div className="flex mt-11 ml-3.5">
                             {
                                 [1, 2, 3, 4, 5].map((value, index) => {
-                                    if (selectedStar >= value) {
-                                        return (
-                                            <img src={ratedStar} alt="ratedStar" />
-                                        )
-                                    }
-                                    else {
-                                        return (
-                                            <img src={blankStar} alt="not rated star"/>
-                                        )
-                                    }
+                                     
+                                    return (
+                                        <img src={ selectedStar >= value?ratedStar:blankStar} alt="ratedStar" key={index}/>
+                                    )
                                 })
                             }
                         </div>
@@ -116,10 +110,12 @@ const CoursesContainer = () => {
                         <div className="grid grid-cols-6 mt-7">
                             <div className="col-span-2">
                                 {
-                                    ratingData.map((value, index) => {
+                                    ratingData.map((value, index) => {   
                                         return (
-                                            <p className="my-6 text-base text-gray-450">{value.name}</p>
-                                        )
+                                            <div className="my-6" key={index}>
+                                            <p className=" text-base text-gray-450" key={index}>{value.name}</p>
+                                            </div>
+                                        )                  
                                     })
                                 }
                             </div>
@@ -127,11 +123,11 @@ const CoursesContainer = () => {
                                 {
                                     ratingData.map((value, index) => {
                                         return (
-                                            <div key={index} className="flex">
+                                            <div key={index} className="flex my-4">
                                                 {[1, 2, 3, 4, 5].map((notRated, i) => {
                                                     return (
                                                         <div key={i}>
-                                                            <img src={value.rating >= notRated ? ratedStar : blankStar} alt="rated star" className="my-3" />
+                                                            <img src={value.rating >= notRated ? ratedStar : blankStar} alt="rated star" className="" />
                                                         </div>
                                                     )
                                                 })}

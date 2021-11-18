@@ -5,14 +5,15 @@ import Navbar from "../Common/Navbar";
 import ListHeading from "./ListHeading";
 import SearchCollege from "./SearchCollege";
 import SearchPageHeader from "./SearchPageHeader";
+import { useDispatch } from "react-redux";
 
 const SearchPageContainer = () => {
   return (
     <div className="bg-gray-100  ">
       <Head>
-        <title>Search</title>
+        <title>Stunlink | Search </title>
       </Head>
-      <Navbar />
+      <Navbar/>
       <SearchPageHeader />
       <ListHeading/>
       <SearchCollege/>

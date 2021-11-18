@@ -19,10 +19,8 @@ const CollegeCardGrid = () => {
         </p>
         <p className="text-gray-500 text-sm font-normal">
           1998 Wufma Point Minnessota, Atlanta, GA
-        </p>
-       
+        </p> 
       </div>
-
     </div>
   );
 };

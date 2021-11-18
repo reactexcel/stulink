@@ -42,7 +42,7 @@ const TopCourses = () => {
       <div className="grid grid-cols-2 gap-8 mx-12">
         {courseData.map((course, index) => {
           return (
-            <div className="shadow p-8 text-center rounded-xl border">
+            <div className="shadow p-8 text-center rounded-xl border" key={index}>
               <p className="text-green-550 text-xl font-black my-4">{course.title}</p>
               <p>
                 Annual Fee:{" "}

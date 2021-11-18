@@ -137,7 +137,7 @@ const CoursesContainer = () => {
                                 }
                             </div>
                             <div className="col-span-2 text-gray-450 text-sm">
-                                The Verified badge indicates that the reviewer's details have been verified by Stulink,
+                                The Verified badge indicates that the reviewers details have been verified by Stulink,
                                 and reviewers are bona fide students of this college. These reviews and ratings have been
                                 given by students. Stulink does not endorsed the same. Out of 276 published reviews, 253 reviews
                                 are verified.

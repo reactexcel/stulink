@@ -32,8 +32,8 @@ const BestColleges = () => {
       <div className="bg-green-400 w-full h-12 rounded-t-lg  flex items-center justify-center text-white">
         Best COlleges
       </div>
-      {[1, 2, 3, 4].map((item) => (
-        <College />
+      {[1, 2, 3, 4].map((item, index) => (
+        <College key={index} />
       ))}
     </div>
   );

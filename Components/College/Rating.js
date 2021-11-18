@@ -1,4 +1,5 @@
 import React from "react";
+import RatingBar from "../Common/RatingBar";
 
 const Rating = () => {
   return (
@@ -14,16 +15,33 @@ const Rating = () => {
           <p>Overall Rating</p>
         </div>
         <div className="col-span-3 mx-4">
-          <div className="my-4 flex justify-between"><p>Academics</p> <p className="text-green-550 font-black">---------------- (5)</p></div>
-          <div className="my-4 flex justify-between"><p>Diversity</p> <p> ---------------- (4)</p></div>
-          <div className="my-4 flex justify-between"><p>Atheletics</p> <p>---------------- (4)</p></div>
-          <div className="my-4 flex justify-between"><p>Value</p> <p>---------------- (5)</p></div>
+          <div className="my-4 flex justify-between">
+            <p className="pt-4">Academics</p>{" "}
+            <RatingBar rating={5} />
+          </div>
+          <div className="my-4 flex justify-between">
+            <p className="pt-4">Diversity</p> <RatingBar rating={4} />
+          </div>
+          <div className="my-4 flex justify-between">
+            <p className="pt-4">Atheletics</p> <RatingBar rating={4} />
+          </div>
+          <div className="my-4 flex justify-between">
+            <p className="pt-4">Value</p> <RatingBar rating={4} />
+          </div>
         </div>
         <div className="col-span-3 mx-4">
-          <div className="my-4 flex justify-between"><p>Professor</p> <p>---------------- (5)</p></div>
-          <div className="my-4 flex justify-between"><p>Campus</p> <p>---------------- (4)</p></div>
-          <div className="my-4 flex justify-between"><p>Location</p> <p>---------------- (4)</p></div>
-          <div className="my-4 flex justify-between"><p>Dorms</p> <p>---------------- (5)</p></div>
+          <div className="my-4 flex justify-between">
+            <p className="pt-4">Professor</p> <RatingBar rating={5} />
+          </div>
+          <div className="my-4 flex justify-between">
+            <p className="pt-4">Campus</p> <RatingBar rating={4} />
+          </div>
+          <div className="my-4 flex justify-between">
+            <p className="pt-4">Location</p> <RatingBar rating={4} />
+          </div>
+          <div className="my-4 flex justify-between">
+            <p className="pt-4">Dorms</p> <RatingBar rating={5} />
+          </div>
         </div>
       </div>
     </div>

@@ -22,11 +22,6 @@ const HomepageContainer = () => {
     dispatch(getHomepageDataRequest());
   }, []);
 
-  useEffect(() => {
-    if (homepage.isSuccess) {
-      console.log(homepage.homepageData, "_____________");
-    }
-  }, [homepage]);
   return (
     <div>
       <Head>

@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { faqIcon } from "../Common/Images"
+import { downIcon} from "../Common/Images"
+
 
 const ListItem = ({ show, setShow, index }) => {
   return (
@@ -31,8 +34,8 @@ const Faqs = () => {
   const [show, setShow] = useState(false);
   return (
     <div className="my-12 rounded-xl shadow-2xl border">
-      <p className="text-blue-550 text-2xl font-black my-8 text-center">
-        FAQs About IIT MADRAS
+      <p className="text-blue-550 text-2xl font-black my-8 text-center flex justify-center items-center">
+      <img  src={faqIcon} alt="faq icon" className=" h-5 w-5 mr-3"/>FAQs About IIT MADRAS
       </p>
       <div className="p-6">
         {[1, 2, 3, 4, 5].map((faq, index) => {
@@ -43,6 +46,8 @@ const Faqs = () => {
           );
         })}
       </div>
+      <p className="text-center text-blue-550 flex justify-center items-center">View more
+       <img src={downIcon} alt="view more" className=" h-1.5 w-3 ml-1.5"/></p>
     </div>
   );
 };

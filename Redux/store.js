@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from "redux";
 import createSagaMiddleware from "redux-saga";
-import rootSaga from "./saga/rootSaga";
+import  { watcherSaga } from "./saga/rootSaga";
 import rootReducer from "./reducer/rootReducer";
 
 // we need an initialState otherwise , store will freak out
@@ -14,6 +14,6 @@ const store = createStore(
   initialState,
   applyMiddleware(sagaMiddleware)
 );
-sagaMiddleware.run(rootSaga);
+sagaMiddleware.run(watcherSaga);
 
 export default store;

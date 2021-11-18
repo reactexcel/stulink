@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { signupImage } from "../Common/Images";
 import StepsFlow from "./StepsFlow";
+import { useDispatch , useSelector } from "react-redux";
+import { getSingUpRequest } from "../../Redux/action";
 
 const stepData = {
   step_1: {
@@ -38,15 +40,17 @@ export const Step = ({ step = 1 }) => {
 };
 
 export const Step1Input = ({ step, prev, next }) => {
+  const dispatch = useDispatch()
   const [formData, setFormData] = useState({
-    mobile: "",
+    number: "",
     email: "",
     password: "",
-    confPassword: "",
+    con_password: "",
     username: "",
     college: "",
     stream: "",
-    hashtags: [],
+    hashtags: "",
+    friendsName:""
   });
   const [error, setError] = useState("");
   const Tabs = ({ text }) => {
@@ -57,7 +61,7 @@ export const Step1Input = ({ step, prev, next }) => {
           hashtags: formData.hashtags.filter((hashtag) => hashtag !== text),
         });
       } else {
-        setFormData({ ...formData, hashtags: [...formData.hashtags, text] });
+        // setFormData({ ...formData, hashtags: ...formData.hashtags, });
       }
     };
     return (
@@ -81,11 +85,11 @@ export const Step1Input = ({ step, prev, next }) => {
   const handleSubmit = (e) => {
     setError("");
     e.preventDefault();
-    if (formData.password !== formData.confPassword) {
+    if (formData.password !== formData.con_password) {
       setError("Passwords don't match");
     } else if (
-      !(formData.email || formData.mobile) ||
-      (formData.mobile && formData.mobile.length !== 10)
+      !(formData.email || formData.number) ||
+      (formData.number && formData.number.length !== 10)
     ) {
       setError("Email or mobile number required");
     } else {
@@ -101,8 +105,8 @@ export const Step1Input = ({ step, prev, next }) => {
             <div className="my-8">
               <p className="text-xl font-semibold">Enter Mobile Number</p>
               <input
-                value={formData.mobile}
-                onChange={(e) => handleFormData("mobile", e)}
+                value={formData.number}
+                onChange={(e) => handleFormData("number", e)}
                 type="number"
                 className="focus:outline-none border border-blue-550 rounded-xl w-full p-4 my-2"
                 autoFocus
@@ -131,8 +135,8 @@ export const Step1Input = ({ step, prev, next }) => {
             <div className="my-8">
               <p className="text-xl font-semibold">Enter Confirm Password</p>
               <input
-                value={formData.confPassword}
-                onChange={(e) => handleFormData("confPassword", e)}
+                value={formData.con_password}
+                onChange={(e) => handleFormData("con_password", e)}
                 type="password"
                 className="focus:outline-none border border-blue-550 rounded-xl w-full p-4 my-2"
                 required
@@ -194,7 +198,7 @@ export const Step1Input = ({ step, prev, next }) => {
         );
       case 5:
         return (
-          <div className="grid grid-cols-5 my-8 p-8 text-center items-center">
+          <div className="grid grid-cols-4 my-8 p-8 text-center items-center">
             {[
               "#M.B.A.",
               "#B.TECH",
@@ -236,7 +240,7 @@ export const Step1Input = ({ step, prev, next }) => {
               disabled={step === 1}
               className="p-4 bg-black disabled:bg-gray-500 disabled:opacity-50 text-white rounded-xl w-44 transition duration-300 disabled:cursor-not-allowed hover:-translaye-y-1 hover:scale-105"
             >
-              {"<<"} Previous
+              {"<<"}
             </button>
             <button
               type="submit"
@@ -251,7 +255,9 @@ export const Step1Input = ({ step, prev, next }) => {
         {step === 5 && (
           <div>
             <div className="flex justify-center mt-24">
-              <button className="text-4xl text-white bg-blue-550 py-4 m-4 w-3/4 rounded-full transition duration-300 transform hover:-translaye-y-1 hover:scale-105 hover:bg-opacity-90">
+              <button className="text-4xl text-white bg-blue-550 py-4 m-4 w-3/4 rounded-full transition duration-300 transform hover:-translaye-y-1 hover:scale-105 hover:bg-opacity-90" onClick={()=>{
+              console.log("dsfdsgdsggd",formData)
+              dispatch(getSingUpRequest(formData))}}>
                 Sign Up
               </button>
             </div>

@@ -3,11 +3,11 @@ import { college } from "../Common/Images";
 
 const NewsContent = () => {
   return (
-    <div className="my-12 border shadow-xl px-4 ">
+    <div className="mb-12 border shadow-xl px-6 ">
       <div className="flex flex-col w-full ">
-        <img className="w-full h-96" src={college} />
+        <img className="w-full h-96"  alt="college" src={college} />
 
-        <h1 className="text-xl my-2 max-w-4xl font-semibold">
+        <h1 className="text-xl my-4 max-w-4xl font-semibold">
           BITSAT Test Centre/ City Allotment 2021 (July 12) - Check Test City
           Allotment Here
         </h1>

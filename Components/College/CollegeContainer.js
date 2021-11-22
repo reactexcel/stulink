@@ -8,6 +8,9 @@ import InformationContainer from "./InformationContainer";
 import CoursesContainer from "./CoursesContainer";
 import TrendingAdmissions from "./TrendingAdmissions";
 import StudentsViewed from "./StudentsViewed";
+import AdmissionsContainer from "./AdmissionsContainer";
+import CuttoffContainer from "./CuttoffContainer";
+import GalleryContainer from "./GalleryContainer";
 
 const CollegeContainer = () => {
   const [tab, setTab] = useState("Information");
@@ -23,6 +26,9 @@ const CollegeContainer = () => {
         <div className="col-span-5">
           {tab === "Information" && <InformationContainer />}
           {tab  ==="Courses" && <CoursesContainer/>}
+          {tab  === "Admissions" && <AdmissionsContainer/>}
+          {tab === "Cut Off" && <CuttoffContainer/>}
+          {tab === "Gallery" && <GalleryContainer/>}
         </div>
         <div className="col-span-2">
           <TrendingAdmissions />

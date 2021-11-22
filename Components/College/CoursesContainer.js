@@ -1,20 +1,11 @@
 import React from 'react'
 import { coursesIcon } from "../Common/Images";
-import { bookOpen } from '../Common/Images';
-import { examsAccept } from '../Common/Images';
-import { eligibiltyAccept } from '../Common/Images';
-import { lateralEntry } from '../Common/Images';
-import { feesIcon } from '../Common/Images';
-import { rightGreenArrow } from "../Common/Images";
-import { availableCourse } from "../Common/Images";
-import { rightYellowArrow } from "../Common/Images";
-import { applyNow } from "../Common/Images";
-import { downArrow } from "../Common/Images";
 import CoursesList from './CoursesList';
-import { faqIcon } from "../Common/Images"
 import Faqs from "./Faqs";
-import { ratingIcon } from "../Common/Images"
-
+import { reviewIcon } from "../Common/Images";
+import StudentReview from "./StudentReview";
+import StarRating from './StarRating';
+import { downIcon } from "../Common/Images";
 
 const Programmes = () => {
     return (
@@ -23,6 +14,7 @@ const Programmes = () => {
         </div>
     );
 }
+
 const CoursesContainer = () => {
     return (
         <div>
@@ -53,22 +45,19 @@ const CoursesContainer = () => {
                 </div>
             </div>
             <Faqs />
-            <div className="border">
+            <StarRating/>
+            <div className="mt-4 border-t-2 pt-16">
+
                 <div className="flex justify-center items-center">
-              <img src={ ratingIcon} alt="ratingIcon" height="24px" width="24px" className="p-0.5 mr-2.5 border border-blue-550 rounded-full"/>
-            <p className="text-blue-550 text-2xl"> COLLEGE RATING
-            </p>
+                    <img src={reviewIcon} alt="ratingIcon" height="33px" width="33px" className=" mr-2.5" />
+                    <p className="text-blue-550 text-2xl font-black"> Student Reviews
+                    </p>
                 </div>
-           <div className="grid grid-cols-7 mt-6">
-                <div className="col-span-2">
-                    <p>Overall Rating (Out of 5)
-                       </p>
-                </div>
-                <div className="col-span-5">
-                  <p>Component Ratings (Out of 5)</p>
-                </div>
-               
-               </div> 
+          <StudentReview/>
+          <StudentReview/>
+          <StudentReview/>
+          <p className="text-center text-blue-550 flex justify-center items-center p-3">View more
+       <img src={downIcon} alt="view more" className=" h-1.5 w-3 ml-1.5"/></p>
             </div>
         </div>
     );

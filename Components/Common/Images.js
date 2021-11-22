@@ -68,4 +68,6 @@ export const documentation = "./icon/documentation.png"
 export const reservation  = "./icon/reservation.png"
 export const cutOff = "./icon/cutOff.png"
 export const collegeCutoff = "./icon/collegeCutoff.png"
+export const downGreenArrow = "./icon/downGreenArrow.png"
+export const upGreenArrow  = "./icon/upGreenArrow.png"
 

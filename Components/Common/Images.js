@@ -70,4 +70,6 @@ export const cutOff = "./icon/cutOff.png"
 export const collegeCutoff = "./icon/collegeCutoff.png"
 export const downGreenArrow = "./icon/downGreenArrow.png"
 export const upGreenArrow  = "./icon/upGreenArrow.png"
-
+export const GalleryIcon =   "./icon/GalleryIcon.png"
+export const rightLongArrowBlack = "./icon/rightLongArrowBlack.png"
+export const card = "./icon/card.png"

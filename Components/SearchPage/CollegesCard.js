@@ -8,7 +8,7 @@ const CollegeCard = () => {
         <p className=" absolute  font-semibold text-sm text-blue-550 p-2 font-Poppins">
           Featured college
         </p>
-        <img className="rounded-lg w-11/12 h-full" src={college} />
+        <img className="rounded-lg w-11/12 h-full" src={college} alt="collegeIcon"/>
       </div>
       <div className="flex flex-col max-w-xl">
         <h1

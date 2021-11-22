@@ -174,9 +174,11 @@ const ThirdSection = () => {
         <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
           Jobs
         </p>
+        <Link href="/news">
         <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
           News
         </p>
+        </Link>
         <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
           Chat Room
         </p>

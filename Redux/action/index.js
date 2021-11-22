@@ -15,3 +15,9 @@ export const  getSingUpError   = createAction(constant.GET_SIGNUP_ERROR)
 export const getCollegesRequest = createAction(constant.GET_COLLEGE_REQUEST)
 export const getCollegesSuccess = createAction(constant.GET_COLLEGE_SUCCESS)
 export const getCollegesErrror = createAction(constant.GET_COLLEGE_ERROR)
+
+
+//search 
+export const getNewsRequest = createAction(constant.GET_NEWS_REQUEST)
+export const getNewsSuccess = createAction(constant.GET_NEWS_SUCCESS)
+export const getNewsErrror = createAction(constant.GET_NEWS_ERROR)

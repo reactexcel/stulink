@@ -25,7 +25,6 @@ const CollegeCard = () => {
         </p>
         <div className="flex flex-row justify-between my-2 max-w-md">
           <div className="flex flex-row text-gray-500  text-sm ">
-            {" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -37,7 +36,6 @@ const CollegeCard = () => {
             Courses
           </div>
           <div className="flex flex-row  text-gray-500 text-sm ">
-            {" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"

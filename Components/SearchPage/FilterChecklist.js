@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 const FilterChecklist = ({ data }) => {
+  const [checked,setChecked]=useState(false)
   return (
     <div>
       {data.map((item, index) => {
         return (
           <label key={index} className="custom-label flex mt-1 ml-3 py-1">
-            <div className="bg-white border   w-5 shadow-lg h-5 p-1 flex justify-center items-center mr-2">
-              <input type="checkbox" className="hidden" checked />
+            <div className="bg-white border w-5 shadow-lg h-5 p-1 flex justify-center items-center mr-2">
+              <input type="checkbox" className="hidden" onChange={()=>setChecked(!checked)} />
               <svg
-                className="hidden w-4 h-6 text-green-600 pointer-events-none"
+                className="hidden w-8 h-8 text-green-600 pointer-events-none"
                 viewBox="0 0 172 172"
+                width="50px" height="50px"
               >
                 <g
                   fill="none"

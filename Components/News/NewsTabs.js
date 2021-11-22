@@ -8,73 +8,56 @@ const tabs = [
     activeImg: "/img/post-icon-active.png",
   },
   {
-    title: "Colleges News",
+    title: "College",
     img: "/img/reply-icon.png",
     activeImg: "/img/reply-icon-active.png",
   },
   {
-    title: "Result News",
+    title: "Result",
     img: "/img/like-icon.png",
     activeImg: "/img/like-icon-active.png",
   },
   {
-    title: "General News",
+    title: "General",
     img: "/img/repost-icon.png",
     activeImg: "/img/repost-icon-active.png",
   },
   {
-    title: "Education News",
+    title: "Education",
     img: "/img/gallery-icon.png",
     activeImg: "/img/gallery-icon-active.png",
   },
   {
-    title: "Student life News",
+    title: "Student life",
     img: "/img/topic-icon.png",
     activeImg: "/img/topic-icon.png",
   },
 ];
 
-const NewsTabs = () => {
-  const [active, setActive] = useState("Result News");
-  const handleActive = (tab) => {
-    setActive(tab);
-  };
 
-  const Tabs = ({ tab }) => {
+  const Tab = ({ tab, isActive }) => {
     return (
-      <button
-        onClick={() => handleActive(tab.title)}
-        className={`flex text-xl font-black transition duration-500  items-center transform ${
-          active === tab.title
-            ? "bg-blue-550 border-b-4 text-white border-blue-550 "
-            : ""
-        } pb-4`}
-      >
-        {tab.title}
-      </button>
+      <div className={`${isActive ? "text-white  font-smibold text-lg bg-blue-550 rounded-t-lg shadow-inner p-4" : "p-4"}   cursor-pointer`}>
+        <p>{tab.title} News</p>
+      </div>
     );
   };
-
-  return (
-    <div>
-      <div className="shadow-xl flex justify-between ">
-        {tabs.map((tab, index) => {
-          return (
-            <div key={index} className="max-w-xl 2xl ">
-              <Tabs tab={tab} />
-            </div>
-          );
-        })}
+  
+  const NewsTabs = ({ setTab, tab }) => {
+    return (
+      <div>
+        <div className="flex justify-between border-b-4 border-blue-550  ">
+          {tabs.map((tabs, index) => {
+            return (
+              <div key={index} onClick={() => setTab(tabs.title)}>
+                <Tab tab={tabs} isActive={tab === tabs.title ? true : false} />
+              </div>
+            );
+          })}
+        </div>
       </div>
-      <div className="my-12 border shadow-xl  ">
-          <div className="mx-8 max-w-11/12">
-          <h1 className="text-blue-550 text-2xl font-semibold my-4">{active}</h1>
-      {active && <AllNews/> }
-      </div>
-      </div>
-
-    </div>
-  );
-};
+    );
+  };
+  
 
 export default NewsTabs;

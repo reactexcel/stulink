@@ -2,7 +2,7 @@ import { createStore, applyMiddleware } from "redux";
 import createSagaMiddleware from "redux-saga";
 import  { watcherSaga } from "./saga/rootSaga";
 import rootReducer from "./reducer/rootReducer";
-
+import { composeWithDevTools } from 'redux-devtools-extension';
 // we need an initialState otherwise , store will freak out
 const initialState = {};
 
@@ -12,7 +12,8 @@ const sagaMiddleware = createSagaMiddleware();
 const store = createStore(
   rootReducer,
   initialState,
-  applyMiddleware(sagaMiddleware)
+  composeWithDevTools(
+  applyMiddleware(sagaMiddleware))
 );
 sagaMiddleware.run(watcherSaga);
 

@@ -61,22 +61,22 @@ const ExamUpdates = () => {
                 </p>
               </div>
             </div>
-            <p className="my-9 font-normal text-lg text-gray-700">
+            <p className="my-6 font-normal text-sm text-gray-700">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
               commodo ligula eget dolor. Aenean massa. Cum sociis natoque
               penatibus et magnis dis parturient montes Lorem ipsum dolor sit
               amet, consectetuer adipiscing elit.
             </p>
-            <p className="my-3">
+            <p className="my-2 text-xs">
               <b>Examination Mode</b> – Computer Based Test
             </p>
-            <p className="my-3">
+            <p className="my-2 text-xs">
               <b>Number of Shits</b> - 2 (9 am to 12 pm & 2:30 pm to 5:30 pm)
             </p>
-            <p className="my-3">
+            <p className="my-2 text-xs">
               <b>Duration of Exam</b> - 3 hours
             </p>
-            <p className="my-3">
+            <p className="my-2 text-xs">
               <b>Mode of Language</b> – English and Hindi
             </p>
             <div className="flex flex-col mt-4">

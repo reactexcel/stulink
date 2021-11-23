@@ -8,15 +8,15 @@ import Link from "next/link";
 
 const FirstSection = () => {
   return (
-    <div className="bg-black text-white text-base py-6">
+    <div className="bg-black text-white text-base py-4">
       <div className="flex justify-between md:mx-12 mx-2">
         <div>
-          <p>DATE: 20th August 2021</p>
+          <p className="text-vs">DATE: 20th August 2021</p>
         </div>
         <div className="flex md:flex-row flex-col justify-between">
-          <p className="mx-4">Privacy Policy</p>
-          <p className="mx-4">Terms and conditions</p>
-          <p className="mx-4">Contact us</p>
+          <p className="mx-4 text-vs ">Privacy Policy</p>
+          <p className="mx-4 text-vs">Terms and conditions</p>
+          <p className="mx-4 text-vs">Contact us</p>
         </div>
       </div>
     </div>
@@ -39,10 +39,10 @@ const SecondSection = ({ isLoggedin }) => {
   };
   return (
     <div className="bg-blue-950">
-      <div className="grid md:grid-cols-8 grid-cols-1 md:p-4 p-1 md:gap-4 gap-12">
+      <div className="grid md:grid-cols-8 grid-cols-1 md:p-3 p-1 md:gap-4 gap-12">
         <div className="col-span-2 my-auto mx-12">
           <Link href="/">
-            <img src={logo} alt="STULINK" height="auto" width="auto" />
+            <img src={logo} alt="STULINK" height="40px" width="200px" className="h-9 w-40"/>
           </Link>
         </div>
         <div className="col-span-4 my-auto">
@@ -108,10 +108,10 @@ const SecondSection = ({ isLoggedin }) => {
                     alt="profile"
                     height="auto"
                     width="65px"
-                    className="cursor-pointer"
+                    className="cursor-pointer h-11"
                   />
                 </Link>
-                <p className="text-white my-auto mx-4 font-black text-xl">
+                <p className="text-white my-auto mx-4 font-black text-base">
                   James
                 </p>
               </div>
@@ -150,14 +150,14 @@ const SecondSection = ({ isLoggedin }) => {
 const ThirdSection = () => {
   return (
     <div className="bg-blue-850">
-      <div className="py-4 md:px-40 px-4 flex md:flex-row flex-col justify-between text-base text-white">
+      <div className="py-3 md:px-56 px-4 flex md:flex-row flex-col justify-between text-base text-white mx-12">
         <Link href="/">
           <img
             className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform"
             src={home}
             alt="Home"
-            width="auto"
-            height="auto"
+            width="19px"
+            height="8px"
           />
         </Link>
         <Link href="/college">

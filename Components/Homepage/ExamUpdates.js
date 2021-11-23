@@ -10,11 +10,12 @@ const ExamUpdates = () => {
   return (
     <>
       <div className="max-w-screen-xl mx-auto my-9">
+        {/* mx-auto */}
         <div className="flex flex-col items-center">
-          <p className="font-semibold text-2xl font-Poppins text-blue-550 mr-5">
+          <p className="font-semibold text-sm font-Poppins text-blue-550 mr-5">
             LATEST
           </p>
-          <p className="font-medium text-4xl font-Poppins text-black">
+          <p className="font-medium text-xl font-Poppins text-black">
             Exam Updates
           </p>
         </div>
@@ -50,12 +51,12 @@ const ExamUpdates = () => {
 
           <div className="flex flex-col w-2/3 shadow-lg rounded-xl px-11 py-8">
             <div className="flex flex-row justify-between">
-              <p className="font-semibold text-xl font-Poppins text-blue-550 mr-5">
+              <p className="font-semibold text-lg font-Poppins text-blue-550 mr-5">
                 NET EXAMS 2021
               </p>
               <div className="flex flex-row items-center justify-center">
                 <img src={calendar} />
-                <p className="font-medium text-base font-Poppins text-blue-550 mr-5 ml-2">
+                <p className="font-medium text-sm font-Poppins text-blue-550 mr-5 ml-2">
                   25/11/2021
                 </p>
               </div>

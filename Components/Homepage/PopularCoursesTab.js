@@ -16,8 +16,8 @@ const PopularCoursesTab = ({ setFilterCategory, filterCategory }) => {
           onClick={() => setFilterCategory(value.tabName)}
           className={
             filterCategory === value.tabName
-              ? "font-bold text-2xl text-blue-550 cursor-pointer px-5 py-4 border-b-4 border-blue-550"
-              : "font-medium text-lg text-black cursor-pointer px-5 py-4 border-b border-gray-300"
+              ? "font-bold text-base text-blue-550 cursor-pointer px-5 py-4 border-b-4 border-blue-550"
+              : "font-medium text-sm text-black cursor-pointer px-5 py-4 border-b  border-gray-300 "
           }
         >
           {value.tabName}

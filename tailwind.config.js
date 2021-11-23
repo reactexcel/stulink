@@ -21,10 +21,9 @@ module.exports = {
         Poppins: ["Poppins"],
       },
       fontSize:{
-        text:{
-          28:"28px"
-        }
-      },
+          'xx':'8px',
+          'vs':'10px',
+         },
     },
     
     minHeight: {

@@ -57,7 +57,7 @@ const AdmissionsContainer = () => {
                 </div>
                 <div className="col-span-3">
                     <div className="shadow p-6 border rounded-md">
-                        <p className="flex text-blue-550 text-xl items-center">
+                        <p className="flex text-blue-550 text-xl items-center font-black">
                             <img src={borderedHome} alt="homeIcon" className=" h-8 w-8 mr-6" />
                             WELCOME TO IIT MADRAS</p>
 
@@ -74,39 +74,14 @@ const AdmissionsContainer = () => {
 
 
                     <div className="shadow p-6 border my-9 rounded-md">
-                        <p className="flex text-blue-550 text-2xl items-center">
+                        <p className="flex text-blue-550 text-2xl items-center font-black">
                             <img src={admissonDate} alt="admissionIcon" className=" h-8 w-8 mr-6" />
                             Admission Date</p>
                             <AdmissionTable/>
-                        {/* <table className=" w-full mt-5 ml-6">
-                            <th className="text-blue-550 border-t-2 border-b-2 p-4"> EVENT</th>
-                            <th className="text-blue-550 border-t-2 border-b-2 p-4">DATE</th>
-                            <tr className=" text-center border-b-2">
-                                <td className=" text-gray-450 text-sm py-2">Accommodation Check In  </td>
-                                <td className=" border-l-2 py-2"> Wednesday, 30 June</td>
-                            </tr>
-                            <tr className=" text-center border-b-2">
-                                <td className="text-gray-450 text-sm py-2 ">New Student Orientation	 </td>
-                                <td className=" border-l-2 py-2">Thursday, 1 – Thursday 2 July </td>
-                            </tr>
-                            <tr className=" text-center border-b-2">
-                                <td className=" text-gray-450 text-sm py-2"> Term Start	  </td>
-                                <td className=" border-l-2 py-2"> Monday, 5 July </td>
-                            </tr>
-                            <tr className=" text-center border-b-2">
-                                <td className=" text-gray-450 text-sm py-2">Term End	   </td>
-                                <td className=" border-l-2 py-2"> Friday 17 September </td>
-                            </tr>
-                            <tr className=" text-center border-b-2">
-                                <td className=" text-gray-450 text-sm py-2"> Recess  </td>
-                                <td className=" border-l-2 py-2">Monday 20 September – Friday 1 October  </td>
-                            </tr>
-
-                        </table> */}
                     </div>
 
                     <div className="shadow border p-6 my-9 rounded-md">
-                        <p className="flex text-blue-550 text-2xl items-center">
+                        <p className="flex text-blue-550 text-2xl items-center font-black">
                             <img src={eligibilityIcon} alt="curvedArrow" className=" h-8 w-8 mr-6" />
                             Criteria & Eligibility</p>
 
@@ -124,7 +99,7 @@ const AdmissionsContainer = () => {
                     </div>
 
                     <div className="shadow border p-6 my-9 rounded-md">
-                        <p className="flex text-blue-550 text-2xl items-center">
+                        <p className="flex text-blue-550 text-2xl items-center font-black">
                             <img src={selectionIcon} alt="curvedArrow" className=" h-8 w-8 mr-6" />
                             Selection</p>
                             <div className="pl-12">
@@ -138,7 +113,7 @@ const AdmissionsContainer = () => {
                     </div>
                     
                     <div className="shadow border p-6 my-9 rounded-md">
-                        <p className="flex text-blue-550 text-2xl items-center">
+                        <p className="flex text-blue-550 text-2xl items-center font-black">
                             <img src={applyIcon} alt="curvedArrow" className=" h-8 w-8 mr-6" />
                             How to Apply</p>
                             <div className="pl-12">
@@ -153,7 +128,7 @@ const AdmissionsContainer = () => {
                         </div>
                     </div>
                     <div className="shadow border p-6 my-9 rounded-md">
-                        <p className="flex text-blue-550 text-2xl items-center">
+                        <p className="flex text-blue-550 text-2xl items-center font-black">
                             <img src={documentation} alt="curvedArrow" className=" h-8 w-8 mr-6" />
                             Documentation</p>
                             <div className="pl-12">
@@ -167,7 +142,7 @@ const AdmissionsContainer = () => {
                     </div>
 
                     <div className="shadow border p-6 mt-9 rounded-md">
-                        <p className="flex text-blue-550 text-2xl items-center">
+                        <p className="flex text-blue-550 text-2xl items-center font-black">
                             <img src={reservation} alt="curvedArrow" className=" h-8 w-8 mr-6" />
                             Reservation Criteria</p>
                             <div className="pl-12">

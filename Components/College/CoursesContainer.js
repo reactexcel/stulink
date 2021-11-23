@@ -37,7 +37,7 @@ const CoursesContainer = () => {
                 <div className="col-span-3">
                     <div className="flex">
                         <img src={coursesIcon} alt="coursesIcon" className=" h-8 w-8" />
-                        <span className=" text-blue-500 text-2xl font-Poppins ml-2"> Courses </span>
+                        <span className=" text-blue-550 text-2xl font-Poppins ml-2 font-black"> Courses </span>
                     </div>
                     <CoursesList />
                     <CoursesList />

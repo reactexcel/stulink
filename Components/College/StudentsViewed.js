@@ -8,9 +8,11 @@ const ListItem = () => {
           src="/img/trending-college.png"
           alt="Img"
           height="auto"
+          
           width="75px"
-          className="rounded-full"
+          className="rounded-full w-20 h-20"
         />
+
         <div className="ml-4">
           <p className="font-black text-xl">Chandigarh University</p>
           <p className="flex text-gray-400">

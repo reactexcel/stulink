@@ -5,11 +5,11 @@ const CollegesExams = ({ collegeData }) => {
   return (
     <div className="w-full flex justify-center">
       <div className="flex flex-col items-center">
-        <p className="text-blue-550 font-medium text-xl">FIND YOUR BEST</p>
-        <p className="text-black font-semibold text-4xl font-Poppins mt-2">
+        <p className="text-blue-550 font-medium text-lg">FIND YOUR BEST</p>
+        <p className="text-black font-semibold text-3xl font-Poppins mt-2">
           Colleges {"&"} Exams
         </p>
-        <div className="mt-12">
+        <div className="mt-10">
           <button className="bg-blue-550 text-white text-lg font-semibold px-32 py-4 font-Poppins">
             Colleges
           </button>

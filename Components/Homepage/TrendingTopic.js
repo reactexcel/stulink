@@ -8,13 +8,13 @@ const TrendingTopic = () => {
         <p className="font-semibold text-xl font-Poppins text-blue-550 mr-5">
           LATEST
         </p>
-        <p className="font-medium text-4xl font-Poppins text-black">News</p>
+        <p className="font-medium text-3xl font-Poppins text-black">News</p>
       </div>
       <div className=" mt-4">
         {[1, 2, 3, 4, 5, 6, 7].map((value, index) => (
           <div key={index} className="h-32 mx-4 mb-2 border-b-2 ">
             <div className="flex flex-row  ">
-              <p className="text-3xl text-blue-550 font-bold">#</p>
+              <p className="text-xl text-blue-550 font-bold">#</p>
               <div className="flex flex-col items-start mx-4">
                 <p className="font-semibold text-xl font-Poppins text-black my-1">
                   Online Course

@@ -9,12 +9,12 @@ import {
 const ExamUpdates = () => {
   return (
     <>
-      <div className="max-w-screen-xl mx-auto my-12">
+      <div className="max-w-screen-xl mx-auto my-9">
         <div className="flex flex-col items-center">
           <p className="font-semibold text-2xl font-Poppins text-blue-550 mr-5">
             LATEST
           </p>
-          <p className="font-medium text-6xl font-Poppins text-black">
+          <p className="font-medium text-4xl font-Poppins text-black">
             Exam Updates
           </p>
         </div>
@@ -50,7 +50,7 @@ const ExamUpdates = () => {
 
           <div className="flex flex-col w-2/3 shadow-lg rounded-xl px-11 py-8">
             <div className="flex flex-row justify-between">
-              <p className="font-semibold text-2xl font-Poppins text-blue-550 mr-5">
+              <p className="font-semibold text-xl font-Poppins text-blue-550 mr-5">
                 NET EXAMS 2021
               </p>
               <div className="flex flex-row items-center justify-center">
@@ -78,10 +78,10 @@ const ExamUpdates = () => {
             <p className="my-3">
               <b>Mode of Language</b> – English and Hindi
             </p>
-            <div className="flex flex-col mt-5">
+            <div className="flex flex-col mt-4">
               <button
                 type="submit"
-                className="py-3 w-56 bg-blue-550 flex flex-row items-center justify-center rounded-sm transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+                className="py-2 w-48 bg-blue-550 flex flex-row items-center justify-center rounded-sm transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
               >
                 <p className="text-white font-Poppins font-medium text-base mr-3">
                   Apply Now

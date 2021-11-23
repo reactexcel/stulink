@@ -8,7 +8,7 @@ const ChatRooms = () => {
         <p className="font-semibold text-xl font-Poppins text-blue-550 mr-5">
           CHAT
         </p>
-        <p className="font-medium text-4xl font-Poppins text-black">Rooms</p>
+        <p className="font-medium text-3xl font-Poppins text-black">Rooms</p>
       </div>
       <div className="mt-4">
         {[1, 2, 3, 4, 5, 6, 7].map((value, index) => (

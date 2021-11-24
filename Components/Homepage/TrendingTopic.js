@@ -14,7 +14,7 @@ const TrendingTopic = () => {
         {[1, 2, 3, 4, 5, 6, 7].map((value, index) => (
           <div key={index} className="h-32 mx-4 mb-2 border-b-2 ">
             <div className="flex flex-row  ">
-              <p className="text-sm text-blue-550 font-bold">#</p>
+              <p className="text-lg text-blue-550 font-bold">#</p>
               <div className="flex flex-col items-start mx-4">
                 <p className="font-semibold text-base font-Poppins text-black my-1">
                   Online Course

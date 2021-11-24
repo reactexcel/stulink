@@ -46,7 +46,7 @@ const HelpData2 = [
 const HelpCenter = () => {
   return (
     <div className="max-w-screen-xl mx-auto my-20 ">
-      <p className="font-medium text-xl font-Poppins text-black text-center">
+      <p className="font-medium text-2xl font-Poppins text-black text-center">
         Help Center
       </p>
       <div className="flex flex-row my-8">

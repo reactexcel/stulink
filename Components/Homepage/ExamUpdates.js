@@ -9,17 +9,17 @@ import {
 const ExamUpdates = () => {
   return (
     <>
-      <div className="max-w-screen-xl mx-auto my-9">
+      <div className="max-w-screen-xl mx-auto my-5">
         {/* mx-auto */}
         <div className="flex flex-col items-center">
-          <p className="font-semibold text-sm font-Poppins text-blue-550 mr-5">
+          <p className="font-semibold text-base font-Poppins text-blue-550 mr-5">
             LATEST
           </p>
-          <p className="font-medium text-xl font-Poppins text-black">
+          <p className="font-medium text-2xl font-Poppins text-black">
             Exam Updates
           </p>
         </div>
-        <div className="flex flex-row justify-between items-start mt-9">
+        <div className="flex flex-row justify-between items-start mt-5">
           <div className="flex flex-col w-1/3 mr-5 items-center cursor-pointer">
             {[1, 2, 3, 4, 5, 6, 7].map((value, index) => (
               <div

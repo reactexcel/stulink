@@ -9,7 +9,7 @@ const PopularCoursesTab = ({ setFilterCategory, filterCategory }) => {
     { tabName: "Phd" },
   ];
   return (
-    <div className="flex flex-row mt-8">
+    <div className="flex flex-row mt-5">
       {tabsData.map((value, index) => (
         <div
           key={index}

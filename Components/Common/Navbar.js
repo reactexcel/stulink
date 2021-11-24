@@ -156,38 +156,38 @@ const ThirdSection = () => {
             className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform"
             src={home}
             alt="Home"
-            width="19px"
-            height="8px"
+            width="15px"
+            height="4px"
           />
         </Link>
         <Link href="/college">
-          <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+          <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-xs">
             Colleges
           </p>
         </Link>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-xs">
           Exam
         </p>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-xs">
           Courses
         </p>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-xs">
           Jobs
         </p>
         <Link href="/news">
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-xs">
           News
         </p>
         </Link>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-xs">
           Chat Room
         </p>
         <Link href="/members">
-          <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+          <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-xs">
             Member
           </p>
         </Link>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-xs">
           Help Center
         </p>
       </div>

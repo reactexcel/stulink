@@ -13,7 +13,7 @@ const VideoGallery = () => {
 
         <div className="col-span-1  shadow">
           <iframe src="https://www.youtube.com/embed/watch?v=JA3t27eBL3M" title="college virtual tour"
-            frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media;" allowfullscreen
+            frameBorder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media;" allowFullScreen
             height="auto" width="auto"
           >
           </iframe>

@@ -14,6 +14,7 @@ module.exports = {
           550: '#1DB954',
         },
         gray: {
+          220: '#EFEFEF',
           230: '#C2C2C2',
           250: '#E2E2E2',
           270: '#A1A1A1',
@@ -52,6 +53,7 @@ module.exports = {
     boxShadow: {
       lgOuter11: '0px 0px 11px rgba(0, 0, 0, 0.11)',
       lgOuter: '0px 0px 17px rgba(0, 0, 0, 0.07)',
+      lgOuter16: '0px 0px 10px rgba(0, 0, 0, 0.16)',
       lgOuter20: '0px 0px 20px rgba(0, 0, 0, 0.07)',
     },
   },

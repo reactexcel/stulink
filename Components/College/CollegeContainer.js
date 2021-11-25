@@ -11,7 +11,7 @@ import StudentsViewed from './StudentsViewed'
 import AdmissionsContainer from './AdmissionsContainer'
 import CuttoffContainer from './CuttoffContainer'
 import GalleryContainer from './GalleryContainer'
-import QandAContainer from './QandAContainer'
+import QandAContainer from './QandA/QandAContainer'
 const CollegeContainer = () => {
   const [tab, setTab] = useState('Information')
   return (

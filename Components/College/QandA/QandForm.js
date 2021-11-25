@@ -1,10 +1,8 @@
 import React from 'react'
-import { qaGroupicon } from '../Common/Images'
-
-//*Q and A form
+import { qaGroupicon } from '../../Common/Images'
 const QandAForm = () => {
   return (
-    <div className='shadow-lgOuter11 rounded-xl10'>
+    <div className='shadow-lgOuter11 rounded-xl10 mb-10'>
       <article className=' px-9  py-9'>
         <header className='flex items-center mb-9'>
           <img src={qaGroupicon} alt='qaGroup icon' width={33} height={33} />
@@ -42,20 +40,26 @@ const QandAForm = () => {
                 <option value='two'>two</option>
               </select>
             </div>
+            <div className='mt-9 flex justify-end items-center'>
+              <div className='flex items-center'>
+                <button
+                  type='submit'
+                  className='mr-4 py-3 rounded-xl10 px-9 bg-blue-550 text-white tracking-wide'
+                >
+                  Submit
+                </button>
+                <button
+                  type='submit'
+                  className='py-3 px-9 rounded-xl10 border border-gray-600 text-gray-600 tracking-wide'
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
           </form>
         </section>
       </article>
     </div>
   )
 }
-
-//* main Container
-const QandAContainer = () => {
-  return (
-    <div className='p-8'>
-      <QandAForm />
-    </div>
-  )
-}
-
-export default QandAContainer
+export default QandAForm

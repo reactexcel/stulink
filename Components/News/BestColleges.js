@@ -47,7 +47,7 @@ const BestColleges = () => {
 
   return (
     <div className='bg-white border shadow-lg   rounded-lg flex flex-col  mx-2'>
-      <header className='bg-green-550 lg:70 w-full h-12 rounded-t-lg  flex items-center justify-center text-white'>
+      <header className='bg-green-550 h-72 w-full h-12 rounded-t-lg  flex items-center justify-center text-white'>
         <img
           src={school}
           alt='school icon'

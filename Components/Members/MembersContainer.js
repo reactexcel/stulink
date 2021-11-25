@@ -1,52 +1,40 @@
-import React from "react";
-import { profileImg } from "../Common/Images";
+import React from 'react'
+import { profileImg, members } from '../Common/Images'
+import RemoveButton from './RemoveButton'
+import SearchMember from './SearchMember'
+import Member from './Member'
 
-const memberData = [{}];
-
-const Member = () => {
-  return (
-    <div className="flex m-4 shadow-sm border border-gray-300 rounded-xl p-6">
-      <img src="/img/member.png" alt="Profile" height="20px" width="75px" className="h-20" />
-      <div className="mx-4">
-        <p className="font-black">Sand Rama</p>
-        <p className="text-xs text-gray-400">@Sandrama</p>
-        <p className="text-lg text-blue-550 font-black flex mt-2">
-          <img
-            src="/img/college-icon.png"
-            alt="icon"
-            height="20px"
-            width="20px"
-          />
-          Chandigarh University
-        </p>
-        <p className="text-xs text-gray-400">+4 Mututal friends</p>
-        <div className="flex justify-center">
-          <button className="border border-blue-550 text-blue-550 px-8 m-4 transition duration-300 hover:bg-blue-550 hover:text-white rounded text-xl">
-            Link
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-};
+const memberData = [{}]
 
 const MembersContainer = () => {
   return (
     <div>
-      <div className="mx-12 p-8">
-        <p className="font-black text-2xl">Members</p>
-        <div className="grid md:grid-cols-4 grid-cols-1 my-12">
+      {/* header and search */}
+      <div className='mx-12 px-10 pt-10 mt-16 justify-start items-center'>
+        <header className='flex items-center justify-start pb-7'>
+          <img src={members} alt='members icon' width={37} height={37} />
+          <p className='text-black text-2xl font-semibold pl-3'>Members</p>
+        </header>
+        <SearchMember />
+        <div className='flex'>
+          <RemoveButton>sand</RemoveButton>
+          <RemoveButton>delhi</RemoveButton>
+        </div>
+      </div>
+
+      <div className='mx-12 px-8 pb-8'>
+        <div className='grid  xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mb-12 gap-y-8 gap-x-5 mt-6'>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((member, index) => {
             return (
               <div key={index}>
                 <Member />
               </div>
-            );
+            )
           })}
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MembersContainer;
+export default MembersContainer

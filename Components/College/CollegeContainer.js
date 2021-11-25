@@ -11,6 +11,11 @@ import StudentsViewed from "./StudentsViewed";
 import AdmissionsContainer from "./AdmissionsContainer";
 import CuttoffContainer from "./CuttoffContainer";
 import GalleryContainer from "./GalleryContainer";
+import NewsContainer from "./NewsContainer";
+import TrandingTopic from "./TrandingTopic";
+import TopicToFollow from "./TopicToFollow";
+import RankingContainer from "./RankingContainer";
+import TopRankedCollege from "./TopRankedCollege";
 
 const CollegeContainer = () => {
   const [tab, setTab] = useState("Information");
@@ -29,10 +34,27 @@ const CollegeContainer = () => {
           {tab  === "Admissions" && <AdmissionsContainer/>}
           {tab === "Cut Off" && <CuttoffContainer/>}
           {tab === "Gallery" && <GalleryContainer/>}
+          {tab === "News" && <NewsContainer/>}
+          {tab === "Ranking" && <RankingContainer/> }
+          {}
         </div>
         <div className="col-span-2">
           <TrendingAdmissions />
           <StudentsViewed />
+              { tab === "News" &&
+              <>
+              <TrandingTopic/>
+              <TopicToFollow/>
+              </>
+              }
+              {
+                tab === "Ranking" &&
+                <>
+                <TopRankedCollege/>
+                <TrendingAdmissions/>
+                </>
+              }
+
         </div>
       </div>
       <Footer />

@@ -4,10 +4,10 @@ import  { hatchIcon } from "../Common/Images"
 
 const ListItem = () => {
     return (
-        <div className="flex px-9 py-3 border-t">
-            <div className="flex">
-                <img src={hatchIcon} alt="hatchIcon" />
-                <span className="text-blue-550"> 1</span>
+        <div className="flex px-9 py-3 border-t items-center justify-between">
+            <div className="flex items-center">
+                <img src={hatchIcon} alt="hatchIcon" className="w-4 h-6"/>
+                <span className="text-blue-550 text-lg ml-2"> 1</span>
             </div>
             <div>
                 <img
@@ -15,8 +15,11 @@ const ListItem = () => {
                     alt="Img"
                     height="auto"
                     width="75px"
-                    className="rounded-full w-20 h-20"
+                    className="rounded-full w-12 h-12"
                 />
+            </div>
+            <div>
+                <span> Chandigarh University</span>
             </div>
 
         </div>

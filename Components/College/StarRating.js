@@ -15,7 +15,7 @@ const StarRating = () => {
             rating: 2
         },
         {
-            name: "Faculty & Course Curriculum",
+            name: "Faculty & Course ",
             rating: 5
         },
         {

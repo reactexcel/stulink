@@ -44,7 +44,7 @@ const Tab = ({ tab, isActive }) => {
 const CollegeTabs = ({ setTab, tab }) => {
   return (
     <div>
-      <div className="flex justify-around bg-gray-100">
+      <div className="flex justify-around bg-gray-100 pl-20 pr-28">
         {TabArray.map((tabs, index) => {
           return (
             <div key={index} onClick={() => setTab(tabs.title)}>

@@ -18,7 +18,7 @@ const ListItem = () => {
 
 const TopicToFollow = () => {
     return(
-           <div className="p-8">
+           <div className="mt-8">
                <div className="shadow rounded-2xl border">
                 <p className=" bg-green-550 text-base text-white p-6 text-center rounded-2xl"> 
                   <img src={follow} alt="followIcon" className="inline-block"/> 

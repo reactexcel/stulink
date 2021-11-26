@@ -7,8 +7,8 @@ const RenderTable = () => {
     return (
         <tr className="border-t">
             <td className=""> 1</td>
-            <td className="p-3">
-                <div className="flex">
+            <td className="p-3" colSpan="3">
+                <div className="flex justify-center">
                     <img src={univercityIcon} alt="univercityIcon" height="42px" width="42px" className=" h-10 w-10"/>
                     <div className="ml-2">
                         <p className="text-base text-black">IIT Madras</p>
@@ -49,11 +49,11 @@ const UnivercityRanking = () => {
             </div>
 
             <div className="ml-10 mt-5">
-                <table className="w-full">
-                    <tr className=" border-t">
-                        <td className="p-2 text-blue-550 text-lg">Rank</td>
-                        <td className="p-2 text-blue-550 text-lg"> College Name</td>
-                        <td className="p-2 text-blue-550 text-lg"> NIRF Score</td>
+                <table className="w-full text-center">
+                    <tr className="border-t">
+                        <td className="p-2 text-blue-550 text-lg font-black">Rank</td>
+                        <td className="p-2 text-blue-550 text-lg font-black" colSpan="3"> College Name</td>
+                        <td className="p-2 text-blue-550 text-lg font-black"> NIRF Score</td>
                         <td className="p-2 text-blue-550 text-lg"></td>
                         <td className="p-2 text-blue-550 text-lg"></td>
                     </tr>

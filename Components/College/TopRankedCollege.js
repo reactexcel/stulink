@@ -27,7 +27,7 @@ const ListItem = () => {
 
 const TopRankedCollege = () => {
     return (
-        <div className="p-8">
+        <div className=" mt-8">
             <div className="shadow rounded-2xl border">
                 <p className="bg-green-550 text-white text-center text-base p-6 rounded-t-2xl">
                     <img src={barChart} alt="barIcon" className="inline-block" />  <span className=" pl-2">Top Ranked Colleges</span>

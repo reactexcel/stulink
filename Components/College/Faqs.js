@@ -5,7 +5,7 @@ import { downIcon} from "../Common/Images"
 
 const ListItem = ({ show, setShow, index }) => {
   return (
-    <div className="shadow border rounded-xl my-6">
+    <div className=" shadow-lgOuter11 border rounded-xl my-6">
       <div className="flex justify-between p-4 bg-gray-300 rounded-xl text-xl">
         <p>1. Does IIT have management quota?</p>
         <button
@@ -33,7 +33,7 @@ const ListItem = ({ show, setShow, index }) => {
 const Faqs = () => {
   const [show, setShow] = useState(false);
   return (
-    <div className="my-12 rounded-xl shadow-2xl border">
+    <div className="my-9 rounded-xl shadow-2xl border">
       <p className="text-blue-550 text-2xl font-black my-8 text-center flex justify-center items-center">
       <img  src={faqIcon} alt="faq icon" className=" h-5 w-5 mr-3"/>FAQs About IIT MADRAS
       </p>

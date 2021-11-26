@@ -27,7 +27,7 @@ const CollegeContainer = () => {
       <Navbar />
       <CollegeTitle />
       <CollegeTabs setTab={setTab} tab={tab} />
-      <div className="grid grid-cols-7 gap-5 mx-12">
+      <div className="grid grid-cols-7 gap-8 mx-24">
         <div className="col-span-5">
           {tab === "Information" && <InformationContainer />}
           {tab  ==="Courses" && <CoursesContainer/>}
@@ -39,9 +39,40 @@ const CollegeContainer = () => {
           {}
         </div>
         <div className="col-span-2">
-          <TrendingAdmissions />
-          <StudentsViewed />
-              { tab === "News" &&
+          { tab === "Information"  && 
+             <>
+             <TrendingAdmissions />
+              <StudentsViewed />
+             </>
+          }
+           { tab ==="Courses"  && 
+             <>
+             <TrendingAdmissions />
+              <StudentsViewed />
+             </>
+          }
+
+          { tab ==="Admissions"  && 
+             <>
+             <TrendingAdmissions />
+              <StudentsViewed />
+             </>
+          }
+
+          { tab ==="Cut Off"  && 
+             <>
+             <TrendingAdmissions />
+              <StudentsViewed />
+             </>
+          }
+          { tab ==="Gallery"  && 
+             <>
+             <TrendingAdmissions />
+              <StudentsViewed />
+             </>
+          }
+
+          { tab === "News" &&
               <>
               <TrandingTopic/>
               <TopicToFollow/>

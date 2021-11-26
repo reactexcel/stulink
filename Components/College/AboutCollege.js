@@ -1,9 +1,14 @@
 import React from "react";
+import { about } from '../Common/Images'
 
 const AboutCollege = () => {
   return (
-    <div className="shadow-2xl p-8">
-      <p className="text-xl text-blue-550 font-black">About College</p>
+    <div className="shadow-lgOuter11 p-8 my-9">
+      <div className="flex items-center">
+        <img src={about} alt="icon" height="20px" width="20px" className=" h-8 w-8" />
+        <p className=" text-2xl text-blue-550 ml-2 font-black">About College</p>
+      </div>
+
       <div className="flex mx-8 my-12">
         <img src="/img/college.png" alt="" height="auto" width="350px" />
         <p className="mx-4 font-thin text-gray-600">

@@ -2,9 +2,9 @@
   "name": "stulink",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 8047",
+    "start": "next start -p 8047",
     "build": "next build",
-    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {

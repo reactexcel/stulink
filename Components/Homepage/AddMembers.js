@@ -5,10 +5,10 @@ const AddMembers = () => {
   return (
     <div className="flex flex-col w-full   bg-gray-100">
       <div className="flex flex-row items-center border-b border-gray-400 justify-center p-4">
-        <p className="font-semibold text-xl font-Poppins text-blue-550 mr-5">
+        <p className="font-semibold text-sm font-Poppins text-blue-550 mr-5">
           ADD
         </p>
-        <p className="font-medium text-4xl font-Poppins text-black">Members</p>
+        <p className="font-medium text-xl font-Poppins text-black">Members</p>
       </div>
       <div className="mt-4">
         {[1, 2, 3, 4, 5, 6, 7].map((value, index) => (
@@ -19,22 +19,22 @@ const AddMembers = () => {
                 <p className="font-semibold text-lg font-Poppins text-blue-550">
                   Sandeep Singh Randhawa
                 </p>
-                <p className="text-xs text-gray-500 mb-1 ">
+                <p className="text-vs text-gray-500 mb-1 ">
                   stunlink@sandeep singh randhawa
                 </p>
                 <div className="flex flex-row items-center">
                   <div className="rounded-full flex justify-center items-center bg-gray-300 h-6 w-6">
                     <img src={institution} />
                   </div>
-                  <h1 className="text-base font-medium text-black ml-2">
+                  <h1 className="text-xs font-medium text-black ml-2">
                     CHANDIGARH UNIVERSITY
                   </h1>
                 </div>
                 <button
                   type="submit"
-                  className="py-1 px-6 my-3  bg-blue-550 flex flex-row items-center justify-center rounded-sm transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
+                  className="py-1 px-5 my-3  bg-blue-550 flex flex-row items-center justify-center rounded-sm transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105"
                 >
-                  <p className="text-white font-Poppins font-medium text-base ">
+                  <p className="text-white font-Poppins font-medium text-sm ">
                     Link
                   </p>
                 </button>

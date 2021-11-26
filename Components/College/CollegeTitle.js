@@ -1,19 +1,22 @@
 import React from "react";
+import { compare } from "../Common/Images"
+import { link } from "../Common/Images";
 
 const CollegeTitle = () => {
   return (
-    <div className="grid grid-cols-10 gap-6 p-12">
+    <div className="grid grid-cols-10 gap-6 p-12 mx-11">
       <div className="col-span-2">
         <img
           src="/img/iit-madras.png"
           alt="IIT Madras"
           height="auto"
           width="auto"
+          className="h-44 w-44"
         />
       </div>
       <div className="col-span-5">
         <div>
-          <p className="text-3xl font-black">
+          <p className="text-2xl font-black">
             Indian Institute of Technology (IIT Madras)
           </p>
         </div>
@@ -59,19 +62,29 @@ const CollegeTitle = () => {
       </div>
       <div className="col-span-3">
           <div className="flex justify-evenly text-xl my-4 text-center">
-              <button className="text-red-500 font-black">
+            <div className="mt-1">
+              {/* <button className="text-red-500 font-black">
                   Link
-              </button>
-              <button className="text-blue-550 font-black">
-                  Compare
-              </button>
+              </button> */}
+               <div className="flex bg-blue-550 rounded-xl px-8 py-1 items-center">
+                 <img src={link} alt="link" />
+                    <span className="text-sm text-white ml-1">Link</span>
+                 </div>
+              </div>
+              <div>
+              <button className="text-blue-550 font-black pl-14">
+                <img src={compare} alt="compare" className="inline-block mr-1"/>
+                 <span className="text-xl"> Compare   </span>
+               </button>
+              </div>
           </div>
           <div className="flex justify-evenly">
-            <button className="flex bg-yellow-500 text-white p-3 rounded-xl">
+            
+            <button className="flex bg-yellow-500 text-white p-3 rounded-xl w-5/12">
                 <img src="/img/brochures.png" alt="brochures" height="auto" width="15px" className="pt-1" />
                 <span className="mx-2 my-auto">Brochures</span>
             </button>
-            <button className="flex bg-blue-550 text-white p-3 rounded-xl">
+            <button className="flex bg-blue-550 text-white p-3 rounded-xl w-5/12">
                 <img src="/img/apply-college-icon.png" alt="brochures" height="auto" width="15px" className="pt-1" />
                 <span className="mx-2 my-auto">Apply Now</span>
             </button>

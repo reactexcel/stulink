@@ -1,10 +1,14 @@
 import React from "react";
 import RatingBar from "../Common/RatingBar";
+import {rating} from "../Common/Images"
 
 const Rating = () => {
   return (
-    <div className="shadow-xl p-8 rounded-xl">
-      <p className="text-blue-550 text-xl font-black">Rating</p>
+    <div className=" shadow-lgOuter11 p-8 rounded-xl mt-7">     
+      <div className="flex items-center">
+        <img src={rating} alt="icon" className=" h-8 w-8"/>
+        <p className=" text-2xl text-blue-550 ml-2 font-black">Rating</p>
+      </div>
       <div className="grid grid-cols-8 gap-4">
         <div className="col-span-2 font-black text-center">
           <p className="m-12">

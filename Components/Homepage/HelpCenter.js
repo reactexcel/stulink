@@ -45,8 +45,8 @@ const HelpData2 = [
 
 const HelpCenter = () => {
   return (
-    <div className="max-w-screen-xl mx-auto my-32 ">
-      <p className="font-medium text-5xl font-Poppins text-black text-center">
+    <div className="max-w-screen-xl mx-auto my-20 ">
+      <p className="font-medium text-2xl font-Poppins text-black text-center">
         Help Center
       </p>
       <div className="flex flex-row my-8">
@@ -59,11 +59,11 @@ const HelpCenter = () => {
                     <img src={item.img} />
                   </div>
                   <div className="flex flex-col justify-center ml-3 flex-1">
-                    <p className="font-semibold text-lg font-Poppins text-black mb-2">
+                    <p className="font-semibold text-base font-Poppins text-black mb-2">
                       {item.title}
                     </p>
                     <div className="flex flex-row justify-between items-center ">
-                      <p className="font-normal text-gray-500 text-sm">
+                      <p className="font-normal text-gray-500 text-xs">
                         {item.description}
                       </p>
                       <img className="mr-3" />
@@ -78,13 +78,13 @@ const HelpCenter = () => {
               type="submit"
               className="py-3 w-56  bg-blue-550 flex flex-row items-center justify-center rounded-sm transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
             >
-              <p className="text-white font-Poppins font-medium text-base mr-3">
+              <p className="text-white font-Poppins font-medium text-sm mr-3">
                 Ask Questions
               </p>
             </button>
           </div>
         </div>
-        <div className="w-7/12 mx-10 flex flex-col    ">
+        <div className="w-7/12 mx-10 flex flex-col">
           {HelpData2.map((item, index) => {
             return (
               <div
@@ -96,7 +96,7 @@ const HelpCenter = () => {
                     <img src={item.img} className=" h-24 mx-6 w-30 my-4" />
                   </div>
                   <div className="flex flex-col justify-center ml-3 flex-1">
-                    <p className="font-semibold text-lg font-Poppins">
+                    <p className="font-semibold text-base font-Poppins">
                       {item.title}
                     </p>
                     <p className="font-normal	my-1 text-sm">

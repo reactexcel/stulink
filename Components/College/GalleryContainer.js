@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { GalleryIcon } from "../Common/Images"
 import GalleryPhoto from "./GalleryPhoto"
+import VideoGallery from "./VideoGallery"
 const GalleryContainer = () => {
     const [tab, setTab] = useState("ALL");
 
@@ -11,7 +12,7 @@ const GalleryContainer = () => {
             <div className="shadow border p-8 rounded-lg mt-8">
                 <div className="flex items-center">
                     <img src={GalleryIcon} alt="icon" height="20px" width="20px" />
-                    <p className=" text-2xl text-blue-550 ml-2">Album</p>
+                    <p className=" text-2xl text-blue-550 ml-2 font-black">Album</p>
                 </div>
                 <div className="flex justify-center">
                     <div className=" cursor-pointer">
@@ -29,19 +30,36 @@ const GalleryContainer = () => {
                 </div>
                 <div className="mt-9">
                     {tab === "ALL" &&  <GalleryPhoto/>
-                        // (
-                        //     <p> all image will be shown here</p>
-                        // )
-                    }
+                       }
                     {
-                        tab === "Campus" &&
+                      tab === "Campus" &&
                         (
                             <p>campus image will be here</p>
+                        )
+                    }
+                    {
+                        tab === "Facility" &&
+                        (
+                            <p> facility photos will be here</p>
+                        )
+                    }
+                    {
+                        tab === "Events" &&
+                        (
+                            <p>events photo will be here</p>
+                        )
+                    }
+                    {
+                        tab === "Hostel" &&
+                        (
+                            <p> hostel photo will be here</p>
                         )
                     }
                 </div>
 
             </div>
+                <VideoGallery/>
+
         </div>
     )
 }

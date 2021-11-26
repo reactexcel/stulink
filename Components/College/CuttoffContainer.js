@@ -7,7 +7,7 @@ import { upGreenArrow } from "../Common/Images";
 import Faqs from "./Faqs";
 import StarRating from "./StarRating";
 import StudentReview from "./StudentReview";
-import { borderedHome, reviewIcon,downIcon } from "../Common/Images"
+import { borderedHome, reviewIcon, downIcon } from "../Common/Images"
 
 const TextContainer = () => {
     return (
@@ -32,7 +32,7 @@ const CuttoffContainer = () => {
             <div className="shadow border p-8 rounded-lg mt-6">
                 <div className="flex items-center">
                     <img src={cutOff} alt="cutoffIcon" height="33px" width="33px" />
-                    <p className="text-2xl ml-2 text-blue-550"> Cut off Instructions</p>
+                    <p className="text-2xl ml-2 text-blue-550 font-black"> Cut off Instructions</p>
                 </div>
 
                 <div className="ml-10 mt-4">
@@ -44,7 +44,7 @@ const CuttoffContainer = () => {
                 </div>
 
                 <div className="ml-10 mt-8">
-                    <p className="text-xl text-blue-550 ">Cut off Points</p>
+                    <p className="text-xl text-blue-550 font-black ">Cut off Points</p>
                     <TextContainer />
                     <TextContainer />
                     <TextContainer />
@@ -54,48 +54,42 @@ const CuttoffContainer = () => {
             </div>
 
             <div className="shadow border p-8 rounded-lg mt-8">
-                <div className="flex items-center">
+                <div className="flex items-center border-b-2 pb-5">
                     <img src={collegeCutoff} alt="icon" height="33px" width="33px" />
-                    <p className=" text-2xl text-blue-550 ml-2"> IIT Madras cut-off 2020</p>
-                </div>
-
-
-                <div className="grid grid-cols-3 justify-center items-center border-t-2 border-b-2 p-2 mt-8">
-                    <div className="grid-cols-1 text-center">
-                        <span className=" text-blue-550 text-center text-lg">Course</span>
-                    </div>
-                    <div className="grid-cols-1 text-center">
-                        <span className="text-blue-550 text-center text-lg"> Opening All India Category</span>
-                    </div>
-                    <div className="grid-cols-1 text-center">
-                        <span className="text-blue-550 text-center text-lg"> Closing All India Category </span>
-                    </div>
+                    <p className=" text-2xl text-blue-550 ml-2 font-black"> IIT Madras cut-off 2020</p>
                 </div>
 
                 <table className="w-full">
+                    <tr className="border-b border-dotted">
+                        <td className=" text-blue-550 text-center text-lg p-3 font-black">Course</td>
+                        <td className=" text-blue-550 text-center text-lg p-3 font-black"> Opening All India Category</td>
+                        <td className=" text-blue-550 text-center text-lg p-3 font-black"> Closing All India Category</td>
+                    </tr>
                     {
                         [1, 2, 3, 4, 5].map((value, index) => {
                             return (
                                 <>
-                                    <tr className="border-b" onClick={() => { setOpen(!open), setOpenIndex(index) }} key={index}>
-                                        <td className="p-2 w-1/3">
+                                    <tr className={`${open && index === openIndex ? "border-0" : "border-b border-dotted" }`}
+                                    
+                                    onClick={() => { setOpen(!open), setOpenIndex(index) }} key={index}>
+                                        <td className="p-3 w-1/3">
                                             <div className="flex justify-center items-center">
-                                                <span className=" text-blue-550"> B.tech</span>
-                                                <img src={downGreenArrow} alt="arrowIcon" className=" pl-2" />
+                                                <span className=" text-blue-550 font-black text-lg"> B.tech</span>
+                                                <img src={downGreenArrow} alt="arrowIcon" className=" pl-2" width="16px"/>
                                             </div>
                                         </td>
 
                                         <td className="p-2 w-1/3">
                                             <div className="flex justify-center items-center">
-                                                <img src={downGreenArrow} alt="arrowIcon" className="" />
-                                                <img src={upGreenArrow} alt="arrowIcon" className=" pl-2" />
+                                                <img src={downGreenArrow} alt="arrowIcon" className=""  />
+                                                <img src={upGreenArrow} alt="arrowIcon" className=" pl-2" width="16px" />
                                             </div>
 
                                         </td>
                                         <td className="p-2 w-1/3">
                                             <div className="flex justify-center items-center">
-                                                <img src={downGreenArrow} alt="arrowIcon" className="" />
-                                                <img src={upGreenArrow} alt="arrowIcon" className=" pl-2" />
+                                                <img src={downGreenArrow} alt="arrowIcon" className=""  />
+                                                <img src={upGreenArrow} alt="arrowIcon" className="pl-2" width="16px" />
                                             </div>
                                         </td>
                                     </tr>
@@ -103,9 +97,9 @@ const CuttoffContainer = () => {
                                         [1, 2, 3, 4, 5].map((value, index) => {
                                             return (
                                                 <tr className=" border-b" key={index}>
-                                                    <td className="p-2 w-1/3 items-center text-center"> B.Tech Aerospace Engineering</td>
-                                                    <td className="p-2 w-1/3 items-center text-center"> 20 </td>
-                                                    <td className="p-2 w-1/3 items-center text-center"> 20 </td>
+                                                    <td className="p-3 w-1/3 items-center text-center text-base"> B.Tech Aerospace Engineering</td>
+                                                    <td className="p-3 w-1/3 items-center text-center text-base"> 20 </td>
+                                                    <td className="p-3 w-1/3 items-center text-center text-base"> 20 </td>
                                                 </tr>
                                             )
                                         })

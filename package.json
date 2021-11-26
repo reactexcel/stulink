@@ -2,9 +2,9 @@
   "name": "stulink",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 8047",
+    "start": "next start -p 8047",
     "build": "next build",
-    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.0.2",
     "react-scripts": "^4.0.3",
+    "react-youtube": "^7.13.1",
     "redux-actions": "^2.6.5",
     "redux-devtools-extension": "^2.13.9",
     "redux-saga": "^1.1.3",

@@ -1,21 +1,25 @@
 import React from "react";
 import { college } from "../Common/Images";
 
-const CollegeCard = () => {
+const CollegeCard = ({ data }) => {
   return (
     <div className="flex flex-row flex-wrap  w-full bg-white rounded-lg my-2 shadow-2xl">
-      <div className="">
+      <div>
         <p className=" absolute  font-semibold text-sm text-blue-550 p-2 font-Poppins">
           Featured college
         </p>
-        <img className="rounded-lg w-11/12 h-full" src={college} alt="collegeIcon"/>
+        <img
+          className="rounded-lg w-11/12 h-full"
+          src={college}
+          alt="collegeIcon"
+        />
       </div>
       <div className="flex flex-col max-w-xl">
         <h1
           className="text-2xl text-gray-500 my-2  font-semibold"
           style={{ fontSize: "28px" }}
         >
-          Madras Christian College - MCC, Chennai
+          {data.name} Madras Christian College - MCC, Chennai
         </h1>
         <p className="font-bold text-xl my-1 ">
           <span>₹</span>24,000

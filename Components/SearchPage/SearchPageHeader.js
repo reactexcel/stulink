@@ -3,7 +3,7 @@ import React from "react";
 const SearchPageHeader = () => {
   return (
     <div className="mx-12  my-12">
-      <div className="grid grid-cols-3 items-center gap-20  ">
+      <div className="grid grid-cols-3 items-center gap-20">
         <div className="max-w-lg h-50 bg-white rounded-xl text-center shadow-xl border-gray-300 p-6  ">
           <h4 id="name" className="text-xl font-semibold my-4 h-12">
             Top MBA College In India 2021

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import AllNews from "./AllNews";
 
 const tabs = [
   {

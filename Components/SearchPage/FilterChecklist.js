@@ -1,18 +1,42 @@
-import React, { useState } from "react";
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addFilters, removeFilters } from "../../Redux/action";
 
-const FilterChecklist = ({ data }) => {
-  const [checked,setChecked]=useState(false)
+const FilterChecklist = ({ data ,type}) => {
+
+const map = data.map(val=>console.log("vallll",val.id))
+  const dispatch = useDispatch();
+  const value = useSelector((state) => state.filters.filtersData);
+  const colleges = useSelector((state) => state.colleges);
+   
+  const handleChange = (item) => {
+    let selectedBooks = value || [];
+    if (selectedBooks.includes(item)) {
+      dispatch(removeFilters(item));
+    } else {
+      dispatch(addFilters(item));
+    }
+  };
+
   return (
-    <div>
-      {data.map((item, index) => {
+    <div className="h-36 overflow-auto">
+      {data?.map((item, index) => {
         return (
-          <label key={index} className="custom-label flex mt-1 ml-3 py-1">
+          <label key={item.id} className="custom-label flex mt-1 ml-3 py-1">
             <div className="bg-white border w-5 shadow-lg h-5 p-1 flex justify-center items-center mr-2">
-              <input type="checkbox" className="hidden" onChange={()=>setChecked(!checked)} />
+              <input
+                type="checkbox"
+                className="hidden"
+                name={item.name}
+                value={item.name}
+                onChange={() => handleChange(item.name,item.id)}
+                checked={value.includes(item.name)}
+              />
               <svg
                 className="hidden w-8 h-8 text-green-600 pointer-events-none"
                 viewBox="0 0 172 172"
-                width="50px" height="50px"
+                width="50px"
+                height="50px"
               >
                 <g
                   fill="none"
@@ -23,7 +47,6 @@ const FilterChecklist = ({ data }) => {
                   fontSize="none"
                   textAnchor="none"
                   style={{ mixBlendMode: "normal" }}
-                  key={index}
                 >
                   <path d="M0 172V0h172v172z" />
                   <path
@@ -33,12 +56,12 @@ const FilterChecklist = ({ data }) => {
                   />
                 </g>
               </svg>
+
             </div>
-            <span className="select-none -mt-1">{item}</span>
+            <span className="select-none -mt-1">{item.name}</span>
           </label>
         );
       })}
-        <p className="text-xs float-right underline text-gray-500">SEE MORE</p>
     </div>
   );
 };

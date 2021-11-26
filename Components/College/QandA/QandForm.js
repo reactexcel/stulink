@@ -2,8 +2,8 @@ import React from 'react'
 import { qaGroupicon } from '../../Common/Images'
 const QandAForm = () => {
   return (
-    <div className='shadow-lgOuter11 rounded-xl10 mb-10'>
-      <article className=' px-9  py-9'>
+    <div className=' mb-10'>
+      <article className='p-8 shadow-lgOuter11 rounded-xl10  mt-9'>
         <header className='flex items-center mb-9'>
           <img src={qaGroupicon} alt='qaGroup icon' width={33} height={33} />
           <h2 className='font-semibold text-2xl text-blue-550 capitalize ml-3'>

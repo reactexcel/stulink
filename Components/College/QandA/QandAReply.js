@@ -3,8 +3,8 @@ import { bookAndLight, bars } from '../../Common/Images'
 import QandASocial from './QandASocial'
 const QandAReply = () => {
   return (
-    <div className='shadow-lgOuter11 rounded-xl10 mb-10'>
-      <div className=' px-9  py-9'>
+    <div className='p-8 shadow-lgOuter11 rounded-xl10  mt-6'>
+      <div>
         <header className='flex items-center justify-between mb-9 pr-11'>
           <section className='flex items-center'>
             <img src={bookAndLight} alt='qaGroup icon' width={33} height={33} />

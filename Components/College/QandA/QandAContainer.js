@@ -6,7 +6,7 @@ import QandAForm from './QandForm'
 //* main Container
 const QandAContainer = () => {
   return (
-    <main className='p-8'>
+    <main>
       <QandAForm />
       <QandAReply />
     </main>

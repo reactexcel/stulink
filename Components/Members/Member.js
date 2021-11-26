@@ -5,6 +5,8 @@ import {
   linkPersonBlue,
   linkPersonWhite,
   linkCorrect,
+  mutualFriend,
+  mutualFriend2,
 } from '../Common/Images'
 const Member = () => {
   const [isLink, setIsLink] = useState(false)
@@ -38,7 +40,29 @@ const Member = () => {
           />
           Chandigarh University
         </p>
-        <p className='text-xs text-gray-400 pb-4'>+4 Mututal friends</p>
+        {/* overlapping images */}
+        <p className='text-xs10 text-gray-400 pb-4 flex justify-center items-center relative'>
+          <div className='flex content-center relative'>
+            <img
+              src={mutualFriend}
+              alt='mutual 1'
+              className='absolute top-1 right-4 z-10'
+              width='18px'
+            />
+
+            <img
+              src={mutualFriend2}
+              alt='mutual 2 '
+              className='top-0 left-7 absolute'
+              width='18px'
+            />
+
+            {/* <img src={mutualFriend} alt='mutual 3' className=' ' width='18px' />
+
+            <img src={mutualFriend} alt='mutual 4' className='' width='18px' /> */}
+          </div>
+          <span>+4 Mututal friends</span>
+        </p>
 
         <button
           type='button'

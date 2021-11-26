@@ -37,9 +37,11 @@ module.exports = {
       },
       borderRadius: {
         sml: '0.25rem',
+        xl7: '0.438rem',
         xl10: '0.625rem',
         xl20: '1.25rem',
         xl30: '1.875rem',
+        xl50: '3.125rem',
       },
     },
 

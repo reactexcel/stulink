@@ -1,4 +1,5 @@
 import React from "react";
+import {topCourse } from "../Common/Images"
 
 const courseData = [
   {
@@ -35,10 +36,13 @@ const courseData = [
 
 const TopCourses = () => {
   return (
-    <div className="shadow-xl p-8 border my-12 rounded">
-      <p className="text-blue-550 text-2xl font-black my-8">
-        Top Courses {"&"} Fees
-      </p>
+    <div className="shadow-lgOuter11 p-8 border my-9 rounded">
+  
+      <div className="flex items-center mb-9">
+        <img src={topCourse} alt="icon"  className="w-8 h-8" />
+        <p className=" text-2xl text-blue-550 ml-2 font-black">Top Courses {"&"} Fees</p>
+      </div>
+
       <div className="grid grid-cols-2 gap-8 mx-12">
         {courseData.map((course, index) => {
           return (

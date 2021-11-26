@@ -24,6 +24,11 @@ module.exports = {
           'xx':'8px',
           'vs':'10px',
          },
+         boxShadow: {
+          lgOuter11: '0px 0px 11px rgba(0, 0, 0, 0.11)',
+          lgOuter: '0px 0px 17px rgba(0, 0, 0, 0.07)',
+          lgOuter20: '0px 0px 20px rgba(0, 0, 0, 0.07)',
+        },    
     },
     
     minHeight: {

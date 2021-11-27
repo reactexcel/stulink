@@ -11,6 +11,11 @@ module.exports = {
           850: "#102731",
         },
         green: {
+          120: "#D2EAD9",
+          140:"#AEE0BF",
+          160: "#8AD7A4",
+          180:"#65CD89",
+          220:"#41C36F",
           550: "#1DB954"
         },
         gray: {
@@ -23,12 +28,26 @@ module.exports = {
       fontSize:{
           'xx':'8px',
           'vs':'10px',
-         },
+     },
+     margin: {
+         30:'121px',
+         7.5:'30px',
+       },
+    padding: {
+        17.5:'30px',
+    },
+
          boxShadow: {
           lgOuter11: '0px 0px 11px rgba(0, 0, 0, 0.11)',
           lgOuter: '0px 0px 17px rgba(0, 0, 0, 0.07)',
           lgOuter20: '0px 0px 20px rgba(0, 0, 0, 0.07)',
-        },    
+        },
+        
+        left: {
+          30:'7rem',
+          24:'5rem',
+        },
+
     },
     
     minHeight: {

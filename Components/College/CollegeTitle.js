@@ -62,29 +62,29 @@ const CollegeTitle = () => {
       </div>
       <div className="col-span-3">
           <div className="flex justify-evenly text-xl my-4 text-center">
-            <div className="mt-1">
+            <div className="">
               {/* <button className="text-red-500 font-black">
                   Link
               </button> */}
-               <div className="flex bg-blue-550 rounded-xl px-8 py-1 items-center">
+               <div className="flex bg-blue-550 rounded-xl h-12 w-36 justify-center items-center">
                  <img src={link} alt="link" />
-                    <span className="text-sm text-white ml-1">Link</span>
+                    <span className="text-xl text-white ml-1">Link</span>
                  </div>
               </div>
-              <div>
-              <button className="text-blue-550 font-black pl-14">
+              
+              <div className="text-blue-550 font-black h-12 w-36 justify-center items-center">
                 <img src={compare} alt="compare" className="inline-block mr-1"/>
                  <span className="text-xl"> Compare   </span>
-               </button>
-              </div>
+               </div>
+              
           </div>
           <div className="flex justify-evenly">
             
-            <button className="flex bg-yellow-500 text-white p-3 rounded-xl w-5/12">
+            <button className="flex bg-yellow-500 text-white rounded-xl h-11 w-44 items-center justify-center ">
                 <img src="/img/brochures.png" alt="brochures" height="auto" width="15px" className="pt-1" />
                 <span className="mx-2 my-auto">Brochures</span>
             </button>
-            <button className="flex bg-blue-550 text-white p-3 rounded-xl w-5/12">
+            <button className="flex bg-blue-550 text-white rounded-xl h-11 w-44 items-center justify-center">
                 <img src="/img/apply-college-icon.png" alt="brochures" height="auto" width="15px" className="pt-1" />
                 <span className="mx-2 my-auto">Apply Now</span>
             </button>

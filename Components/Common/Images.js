@@ -97,3 +97,4 @@ export const topCourse ="icon/topCourse.png"
 export const imageGalleryIcon ="icon/imageGallery.png"
 export const compare = "icon/compare.png"
 export const scholarship = "icon/scholarship.png"
+export const star = "icon/4star.png";

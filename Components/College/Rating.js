@@ -1,6 +1,7 @@
 import React from "react";
 import RatingBar from "../Common/RatingBar";
-import {rating} from "../Common/Images"
+import {rating} from "../Common/Images";
+import { star } from "../Common/Images";
 
 const Rating = () => {
   return (
@@ -16,35 +17,38 @@ const Rating = () => {
               4.0
             </span>
           </p>
+          <div className="flex-row justify-center items-center text-center">
+            <img src={star} alt="star" className=" ml-16"/>
           <p>Overall Rating</p>
-        </div>
-        <div className="col-span-3 mx-4">
-          <div className="my-4 flex justify-between">
-            <p className="pt-4">Academics</p>{" "}
-            <RatingBar rating={5} />
-          </div>
-          <div className="my-4 flex justify-between">
-            <p className="pt-4">Diversity</p> <RatingBar rating={4} />
-          </div>
-          <div className="my-4 flex justify-between">
-            <p className="pt-4">Atheletics</p> <RatingBar rating={4} />
-          </div>
-          <div className="my-4 flex justify-between">
-            <p className="pt-4">Value</p> <RatingBar rating={4} />
           </div>
         </div>
         <div className="col-span-3 mx-4">
           <div className="my-4 flex justify-between">
-            <p className="pt-4">Professor</p> <RatingBar rating={5} />
+            <p className="pt-4 text-black">Academics</p>{" "}
+            <RatingBar rating={2} />
           </div>
           <div className="my-4 flex justify-between">
-            <p className="pt-4">Campus</p> <RatingBar rating={4} />
+            <p className="pt-4 text-black">Diversity</p> <RatingBar rating={4} />
           </div>
           <div className="my-4 flex justify-between">
-            <p className="pt-4">Location</p> <RatingBar rating={4} />
+            <p className="pt-4 text-black">Atheletics</p> <RatingBar rating={2} />
           </div>
           <div className="my-4 flex justify-between">
-            <p className="pt-4">Dorms</p> <RatingBar rating={5} />
+            <p className="pt-4 text-black">Value</p> <RatingBar rating={4} />
+          </div>
+        </div>
+        <div className="col-span-3 mx-4">
+          <div className="my-4 flex justify-between">
+            <p className="pt-4 text-black">Professor</p> <RatingBar rating={4} />
+          </div>
+          <div className="my-4 flex justify-between">
+            <p className="pt-4 text-black">Campus</p> <RatingBar rating={4} />
+          </div>
+          <div className="my-4 flex justify-between">
+            <p className="pt-4 text-black">Location</p> <RatingBar rating={4} />
+          </div>
+          <div className="my-4 flex justify-between">
+            <p className="pt-4 text-black">Dorms</p> <RatingBar rating={2} />
           </div>
         </div>
       </div>

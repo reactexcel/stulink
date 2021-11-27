@@ -9,7 +9,7 @@ import Link from "next/link";
 const FirstSection = () => {
   return (
     <div className="bg-black text-white text-base py-3">
-      <div className="flex justify-between md:mx-28 mx-2">
+      <div className="flex justify-between md:mx-30 mx-2">
         <div>
           <p className="text-xs">DATE: 20th August 2021</p>
         </div>
@@ -39,8 +39,8 @@ const SecondSection = ({ isLoggedin }) => {
   };
   return (
     <div className="bg-blue-950">
-      <div className="grid md:grid-cols-8 grid-cols-1 md:p-3 p-1 md:gap-4 gap-12">
-        <div className="col-span-2 my-auto ml-12 flex justify-end">
+      <div className="grid md:grid-cols-7 grid-cols-1 md:p-3 p-1 md:gap-4 gap-12">
+        <div className="col-span-2 my-auto ml-12 flex justify-end place-self-center">
           <Link href="/">
             <img src={logo} alt="STULINK" height="40px" width="200px" className=" h-16 w-56 mr-12"/>
           </Link>
@@ -55,7 +55,7 @@ const SecondSection = ({ isLoggedin }) => {
             />
           </form>
         </div>
-        <div className="col-span-2 my-auto">
+        <div className="col-span-2 my-auto place-self-start">
           {!isLoggedin ? (
             <div className="flex justify-center">
               <button className="flex text-white border border-white rounded-full text-2xl mx-2 py-2 px-4 transition duration-300 transform hover:-translate-y-1 hover:scale-105">
@@ -150,7 +150,7 @@ const SecondSection = ({ isLoggedin }) => {
 const ThirdSection = () => {
   return (
     <div className="bg-blue-850">
-      <div className="py-4 md:px-56 px-4 flex md:flex-row flex-col justify-between text-base text-white">
+      <div className="py-3.5 md:px-56 px-4 flex md:flex-row flex-col justify-between text-base text-white">
         <Link href="/">
           <img
             className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform h-5 w-4"

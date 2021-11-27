@@ -22,11 +22,11 @@ const LatestNewsCarouselCards = () => {
             <p className="font-light text-sm ml-3">2 days ago</p>
           </div>
         </div>
-        <p className="font-semibold text-black text-lg mt-5">
+        <p className="font-semibold text-black text-base mt-5">
           BITSAT Test Centre/ City Allotment 2021 (July 12) - Check Test City
           Allotment Here
         </p>
-        <p className="font-normal text-gray-600 text-base mt-4">
+        <p className="font-normal text-gray-600 text-sm mt-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam animi
           dicta ex labore. Ipsum nobis amet nisi voluptate corporis ......
         </p>

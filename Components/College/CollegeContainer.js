@@ -11,6 +11,12 @@ import StudentsViewed from "./StudentsViewed";
 import AdmissionsContainer from "./AdmissionsContainer";
 import CuttoffContainer from "./CuttoffContainer";
 import GalleryContainer from "./GalleryContainer";
+import NewsContainer from "./NewsContainer";
+import TrandingTopic from "./TrandingTopic";
+import TopicToFollow from "./TopicToFollow";
+import RankingContainer from "./RankingContainer";
+import TopRankedCollege from "./TopRankedCollege";
+import ScholarshipContainer from "./Scholarship/ScholarshipContainer";
 
 const CollegeContainer = () => {
   const [tab, setTab] = useState("Information");
@@ -22,17 +28,72 @@ const CollegeContainer = () => {
       <Navbar />
       <CollegeTitle />
       <CollegeTabs setTab={setTab} tab={tab} />
-      <div className="grid grid-cols-7 gap-5 mx-12">
+      <div className="grid grid-cols-7 gap-8 mx-24">
         <div className="col-span-5">
           {tab === "Information" && <InformationContainer />}
           {tab  ==="Courses" && <CoursesContainer/>}
           {tab  === "Admissions" && <AdmissionsContainer/>}
           {tab === "Cut Off" && <CuttoffContainer/>}
           {tab === "Gallery" && <GalleryContainer/>}
+          {tab === "News" && <NewsContainer/>}
+          {tab === "Ranking" && <RankingContainer/>}
+          {tab === "Scholarship" && <ScholarshipContainer/>}
         </div>
         <div className="col-span-2">
-          <TrendingAdmissions />
-          <StudentsViewed />
+          { tab === "Information"  && 
+             <>
+             <TrendingAdmissions />
+              <StudentsViewed />
+             </>
+          }
+           { tab ==="Courses"  && 
+             <>
+             <TrendingAdmissions />
+              <StudentsViewed />
+             </>
+          }
+
+          { tab ==="Admissions"  && 
+             <>
+             <TrendingAdmissions />
+              <StudentsViewed />
+             </>
+          }
+
+          { tab ==="Cut Off"  && 
+             <>
+             <TrendingAdmissions />
+              <StudentsViewed />
+             </>
+          }
+          { tab ==="Gallery"  && 
+             <>
+             <TrendingAdmissions />
+              <StudentsViewed />
+             </>
+          }
+
+          { tab === "News" &&
+              <>
+              <TrandingTopic/>
+              <TopicToFollow/>
+              </>
+              }
+              {
+                tab === "Ranking" &&
+                <>
+                <TopRankedCollege/>
+                <TrendingAdmissions/>
+                </>
+              }
+              {
+                tab === "Scholarship" && 
+                <>
+                  <TrendingAdmissions />
+                    <StudentsViewed />
+                </>
+              }
+
         </div>
       </div>
       <Footer />

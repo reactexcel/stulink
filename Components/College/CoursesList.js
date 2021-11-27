@@ -42,7 +42,7 @@ const CoursesList = () => {
         </div>
 
         <div className="flex mt-5 items-center">
-            <img src={feesIcon} alt="feesIcon" className=" h-8 w-8" /><span className=" text-base text-blue-550 ml-2">Fees</span>
+            <img src={feesIcon} alt="feesIcon" className=" h-8 w-8" /><span className=" text-lg text-blue-550 ml-2 font-black">Fees</span>
         </div>
 
         <div className="mt-4">
@@ -67,7 +67,7 @@ const CoursesList = () => {
         </div>
 
         <div className="flex mt-5 items-center">
-            <img src={availableCourse} alt="feesIcon" className=" h-8 w-8" /><span className=" text-base text-blue-550 ml-2">Available Courses</span>
+            <img src={availableCourse} alt="feesIcon" className=" h-8 w-8" /><span className=" text-lg text-blue-550 ml-2 font-black">Available Courses</span>
         </div>
         <div className="ml-10 grid grid-cols-3 gap-3 items-center mt-5">
             <p> <span>Computer Science and Engineering</span> <img src={rightYellowArrow} className=" inline-block" alt="arrowIcon" /></p>

@@ -8,15 +8,15 @@ import Link from "next/link";
 
 const FirstSection = () => {
   return (
-    <div className="bg-black text-white text-base py-6">
-      <div className="flex justify-between md:mx-12 mx-2">
+    <div className="bg-black text-white text-base py-3">
+      <div className="flex justify-between md:mx-28 mx-2">
         <div>
-          <p>DATE: 20th August 2021</p>
+          <p className="text-xs">DATE: 20th August 2021</p>
         </div>
         <div className="flex md:flex-row flex-col justify-between">
-          <p className="mx-4">Privacy Policy</p>
-          <p className="mx-4">Terms and conditions</p>
-          <p className="mx-4">Contact us</p>
+          <p className="mx-4 text-xs ">Privacy Policy</p>
+          <p className="mx-4 text-xs">Terms and conditions</p>
+          <p className="mx-4 text-xs">Contact us</p>
         </div>
       </div>
     </div>
@@ -39,13 +39,13 @@ const SecondSection = ({ isLoggedin }) => {
   };
   return (
     <div className="bg-blue-950">
-      <div className="grid md:grid-cols-8 grid-cols-1 md:p-4 p-1 md:gap-4 gap-12">
-        <div className="col-span-2 my-auto mx-12">
+      <div className="grid md:grid-cols-8 grid-cols-1 md:p-3 p-1 md:gap-4 gap-12">
+        <div className="col-span-2 my-auto ml-12 flex justify-end">
           <Link href="/">
-            <img src={logo} alt="STULINK" height="auto" width="auto" />
+            <img src={logo} alt="STULINK" height="40px" width="200px" className=" h-16 w-56 mr-12"/>
           </Link>
         </div>
-        <div className="col-span-4 my-auto">
+        <div className="col-span-3 my-auto">
           <form onSubmit={handleSubmit}>
             <input
               placeholder="SEARCH"
@@ -108,10 +108,10 @@ const SecondSection = ({ isLoggedin }) => {
                     alt="profile"
                     height="auto"
                     width="65px"
-                    className="cursor-pointer"
+                    className="cursor-pointer h-11"
                   />
                 </Link>
-                <p className="text-white my-auto mx-4 font-black text-xl">
+                <p className="text-white my-auto mx-4 font-black text-base">
                   James
                 </p>
               </div>
@@ -150,44 +150,44 @@ const SecondSection = ({ isLoggedin }) => {
 const ThirdSection = () => {
   return (
     <div className="bg-blue-850">
-      <div className="py-4 md:px-40 px-4 flex md:flex-row flex-col justify-between text-base text-white">
+      <div className="py-4 md:px-56 px-4 flex md:flex-row flex-col justify-between text-base text-white">
         <Link href="/">
           <img
-            className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform"
+            className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform h-5 w-4"
             src={home}
             alt="Home"
-            width="auto"
-            height="auto"
+            width="15px"
+            height="4px"
           />
         </Link>
         <Link href="/college">
-          <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+          <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
             Colleges
           </p>
         </Link>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
           Exam
         </p>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
           Courses
         </p>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
           Jobs
         </p>
         <Link href="/news">
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
           News
         </p>
         </Link>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
           Chat Room
         </p>
         <Link href="/members">
-          <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+          <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
             Member
           </p>
         </Link>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform">
+        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
           Help Center
         </p>
       </div>

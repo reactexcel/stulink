@@ -8,7 +8,7 @@ const PopularCoursesTags = ({ courses, filterCategory }) => {
           return (
             <div
               key={index}
-              className="capitalize px-2 py-3 border border-blue-550 rounded-md cursor-pointer font-medium text-lg flex justify-center items-center hover:bg-blue-550 hover:text-white transition duration-500"
+              className="capitalize px-1 py-3 border border-blue-550 rounded-md cursor-pointer font-medium text-sm flex justify-center items-center hover:bg-blue-550 hover:text-white transition duration-500"
             >
               {value.name}
             </div>

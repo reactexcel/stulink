@@ -1,9 +1,14 @@
 import React from "react";
+import { imageGalleryIcon} from "../Common/Images"
 
 const ImageGallery = () => {
   return (
-    <div className="my-12 p-8 shadow-2xl border">
-      <p className="text-blue-550 text-2xl font-black my-8">Image Gallery</p>
+    <div className="my-9 p-8 shadow-lgOuter11 border">
+      <div className="flex items-center mb-9">
+        <img src={imageGalleryIcon} alt="icon"  className="w-8 h-8" />
+        <p className=" text-2xl text-blue-550 ml-2 font-black">Image Gallery</p>
+      </div>
+
       <div className="grid grid-cols-3 gap-8">
         <div className="p-2 border rounded-xl text-center"><img src="/img/course-image-1.png" alt="" width="100%" height="auto" /></div>
         <div className="p-2 border rounded-xl text-center"><img src="/img/course-image-2.png" alt="" width="100%" height="auto" /></div>

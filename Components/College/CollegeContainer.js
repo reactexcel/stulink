@@ -17,6 +17,8 @@ import TopicToFollow from "./TopicToFollow";
 import RankingContainer from "./RankingContainer";
 import TopRankedCollege from "./TopRankedCollege";
 import ScholarshipContainer from "./Scholarship/ScholarshipContainer";
+import QandAContainer from "../College/QandA/QandAContainer";
+
 
 const CollegeContainer = () => {
   const [tab, setTab] = useState("Information");
@@ -38,6 +40,8 @@ const CollegeContainer = () => {
           {tab === "News" && <NewsContainer/>}
           {tab === "Ranking" && <RankingContainer/>}
           {tab === "Scholarship" && <ScholarshipContainer/>}
+          {tab === "Q&A" && <QandAContainer/>}
+           
         </div>
         <div className="col-span-2">
           { tab === "Information"  && 
@@ -91,6 +95,13 @@ const CollegeContainer = () => {
                 <>
                   <TrendingAdmissions />
                     <StudentsViewed />
+                </>
+              }
+              {
+                tab == "Q&A" &&
+                <>
+                <TrendingAdmissions />
+                 <StudentsViewed />
                 </>
               }
 

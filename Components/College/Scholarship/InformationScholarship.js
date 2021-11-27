@@ -2,7 +2,6 @@ import React from "react";
 import { scholarship } from "../../Common/Images";
 import { curveArrow } from "../../Common/Images";
 
-
 const TextContainer = () => {
     return (
         <div className="flex my-4 border-b pb-4" >

@@ -19,7 +19,17 @@ module.exports = {
           550: "#1DB954"
         },
         gray: {
-          450: "#797979"
+          220: '#EFEFEF',
+          230: '#C2C2C2',
+          250: '#E2E2E2',
+          270: '#A1A1A1',
+          430: '#8A9CAC',
+          450: '#797979',
+          470: '#6F6F6F',
+          460: '#717171',
+          480: '#767676',
+          750: '#313131',
+          850: '#2B2B2B',
         },
         yellow: {
           450:"#FFD600",
@@ -36,7 +46,18 @@ module.exports = {
       fontSize:{
           'xx':'8px',
           'vs':'10px',
+          xs10: '0.625rem',
+          xs11: '0.688rem',
+          sm15: '0.9375rem',
      },
+     borderRadius: {
+      sml: '0.25rem',
+      xl7: '0.438rem',
+      xl10: '0.625rem',
+      xl20: '1.25rem',
+      xl30: '1.875rem',
+      xl50: '3.125rem',
+    },
      margin: {
          30:'121px',
          7.5:'30px',
@@ -62,7 +83,7 @@ module.exports = {
     minHeight: {
       99: "800px",
     },
-    
+ 
   },
   variants: {
     extend: {

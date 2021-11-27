@@ -44,14 +44,14 @@ const CollegeTitle = () => {
               </div>
             </div>
           </div>
-          <button className="flex my-auto bg-yellow-400 rounded-xl p-2 mx-6">
+          <button className="flex my-auto bg-yellow-450 rounded-xl py-2.5 px-6 mx-6">
             <img
               src="/img/write-review.png"
               alt="Write Review"
               height="auto"
               width="auto"
             />
-            Write Review
+            <span className="ml-1 font-black">Write Review</span>
           </button>
         </div>
         <div className="flex text-sm mt-6">
@@ -66,16 +66,17 @@ const CollegeTitle = () => {
               {/* <button className="text-red-500 font-black">
                   Link
               </button> */}
-               <div className="flex bg-blue-550 rounded-xl h-12 w-36 justify-center items-center">
+               <div className="flex bg-blue-550 rounded-3xl h-12 w-36 justify-center items-center">
                  <img src={link} alt="link" />
-                    <span className="text-xl text-white ml-1">Link</span>
+                    <span className="text-xl text-white ml-2">Link</span>
                  </div>
               </div>
               
-              <div className="text-blue-550 font-black h-12 w-36 justify-center items-center">
-                <img src={compare} alt="compare" className="inline-block mr-1"/>
-                 <span className="text-xl"> Compare   </span>
+              <div className="text-blue-550 font-black h-12 w-36 flex items-center">
+                <img src={compare} alt="compare" className=" mr-1" height="33px" width="33px"/>
+                 <p className="text-xl"> Compare   </p>
                </div>
+
               
           </div>
           <div className="flex justify-evenly">

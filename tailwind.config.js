@@ -21,6 +21,14 @@ module.exports = {
         gray: {
           450: "#797979"
         },
+        yellow: {
+          450:"#FFD600",
+        },
+      },
+      backgroundColor: {
+        yellow: {
+          450:"#FFD600",
+        },
       },
       fontFamily: {
         Poppins: ["Poppins"],
@@ -32,6 +40,7 @@ module.exports = {
      margin: {
          30:'121px',
          7.5:'30px',
+         33:'8.5rem'
        },
     padding: {
         17.5:'30px',

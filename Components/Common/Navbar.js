@@ -42,7 +42,7 @@ const SecondSection = ({ isLoggedin }) => {
       <div className="grid md:grid-cols-7 grid-cols-1 md:p-3 p-1 md:gap-4 gap-12">
         <div className="col-span-2 my-auto ml-12 flex justify-end place-self-center">
           <Link href="/">
-            <img src={logo} alt="STULINK" height="40px" width="200px" className=" h-16 w-56 mr-12"/>
+            <img src={logo} alt="STULINK" height="40px" width="200px" className=" h-16 mr-12"/>
           </Link>
         </div>
         <div className="col-span-3 my-auto">
@@ -150,10 +150,10 @@ const SecondSection = ({ isLoggedin }) => {
 const ThirdSection = () => {
   return (
     <div className="bg-blue-850">
-      <div className="py-3.5 md:px-56 px-4 flex md:flex-row flex-col justify-between text-base text-white">
+      <div className="py-3.5 md:px-54.25 px-4 flex md:flex-row flex-col justify-between text-base text-white">
         <Link href="/">
           <img
-            className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform h-5 w-4"
+            className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform h-4.5 w-4.5"
             src={home}
             alt="Home"
             width="15px"

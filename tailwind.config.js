@@ -49,6 +49,7 @@ module.exports = {
           xs10: '0.625rem',
           xs11: '0.688rem',
           sm15: '0.9375rem',
+          '27': '27px',
      },
      borderRadius: {
       sml: '0.25rem',
@@ -61,13 +62,27 @@ module.exports = {
      margin: {
          30:'121px',
          7.5:'30px',
-         33:'8.5rem'
+         33:'8.5rem',
+         4.5:'18px',
+         14.5:'58px',
+         8.5:'34px',
        },
     padding: {
         17.5:'30px',
+        54.25:'217px',
+        10.5:'42px',
+        31:'124px',
     },
-
-         boxShadow: {
+    height: {
+      45:"180px",
+      4.5:"18px",
+    },
+    width: {
+      45:"180px",
+      600:"600px",
+      4.5:"18px",
+    },
+      boxShadow: {
           lgOuter11: '0px 0px 11px rgba(0, 0, 0, 0.11)',
           lgOuter: '0px 0px 17px rgba(0, 0, 0, 0.07)',
           lgOuter20: '0px 0px 20px rgba(0, 0, 0, 0.07)',

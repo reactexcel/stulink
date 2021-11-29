@@ -18,6 +18,7 @@ import RankingContainer from "./RankingContainer";
 import TopRankedCollege from "./TopRankedCollege";
 import ScholarshipContainer from "./Scholarship/ScholarshipContainer";
 import QandAContainer from "../College/QandA/QandAContainer";
+import PlacementContainer from "./Placements.js/PlacementContainer";
 
 
 const CollegeContainer = () => {
@@ -40,6 +41,7 @@ const CollegeContainer = () => {
           {tab === "News" && <NewsContainer/>}
           {tab === "Ranking" && <RankingContainer/>}
           {tab === "Scholarship" && <ScholarshipContainer/>}
+          {tab ==="Placements" && <PlacementContainer/>}
           {tab === "Q&A" && <QandAContainer/>}
            
         </div>
@@ -92,6 +94,13 @@ const CollegeContainer = () => {
               }
               {
                 tab === "Scholarship" && 
+                <>
+                  <TrendingAdmissions />
+                    <StudentsViewed />
+                </>
+              }
+              {
+                tab === "Placements" && 
                 <>
                   <TrendingAdmissions />
                     <StudentsViewed />

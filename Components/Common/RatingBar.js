@@ -3,7 +3,6 @@ import React from "react";
 const RatingBar = ({rating = 5 }) => {
   return (
     <div className="">
-
         <div className={`h-1 w-1 p-2 rounded-full border-green-550 border-2 bg-white bg-opacity-80 relative top-6 left-${rating*5}`} />
       <div className="flex justify-between">
         <div>

@@ -75,11 +75,14 @@ module.exports = {
     },
     height: {
       45:"180px",
+      13:"50px",
       4.5:"18px",
     },
     width: {
       45:"180px",
       600:"600px",
+      825:"825px",
+      338:"340px",
       4.5:"18px",
     },
       boxShadow: {

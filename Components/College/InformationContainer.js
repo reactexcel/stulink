@@ -11,7 +11,7 @@ import { downIcon } from "../Common/Images";
 
 const InformationContainer = () => {
   return (
-    <div>
+    <>
       <Rating />
       <AboutCollege />
       <TopCourses />
@@ -37,7 +37,7 @@ const InformationContainer = () => {
           <img src={downIcon} alt="view more" className=" h-1.5 w-3 ml-1.5" />
         </p>
       </div>
-    </div>
+    </>
   );
 };
 

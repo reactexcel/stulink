@@ -77,13 +77,13 @@ module.exports = {
           30:'7rem',
           24:'5rem',
         },
-
     },
-    
+    width:{
+      365:'365', 
+    },
     minHeight: {
       99: "800px",
     },
- 
   },
   variants: {
     extend: {

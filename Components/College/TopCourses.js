@@ -36,22 +36,23 @@ const courseData = [
 
 const TopCourses = () => {
   return (
-    <div className="shadow-lgOuter11 p-8 border my-9 rounded">
+    <div className="shadow-lgOuter11 p-8 border my-9 rounded" style={{width:'831px'}}>
   
       <div className="flex items-center mb-9">
         <img src={topCourse} alt="icon"  className="w-8 h-8" />
         <p className=" text-2xl text-blue-550 ml-2 font-black">Top Courses {"&"} Fees</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-8 mx-12">
+      <div className="grid grid-cols-2 gap-8 ">
         {courseData.map((course, index) => {
           return (
-            <div className="shadow p-8 text-center rounded-xl border" key={index}>
-              <p className="text-green-550 text-xl font-black my-4">{course.title}</p>
-              <p>
+            <div className="shadow  rounded-xl border  p-4" key={index} style={{width:'365px'}}>
+              <p className="text-green-550  font-black text-lg my-1">{course.title}</p>
+              <p className="text-xs my-2">
                 Annual Fee:{" "}
-                <span className="text-blue-550">INR {course.fee} Lacs</span> |
-                Total Seats: <span className="text-blue-550">{course.seats} Seats</span>
+                <span className="text-blue-550 my-2 font-bold">INR {course.fee} Lacs</span>
+                <span className="px-2"> | </span>
+                Total Seats: <span className="text-blue-550 font-bold">{course.seats} Seats</span>
               </p>
             </div>
           );

@@ -4,26 +4,27 @@ import { link } from "../Common/Images";
 
 const CollegeTitle = () => {
   return (
-    <div className="grid grid-cols-10 gap-6 p-12 mx-11">
-      <div className="col-span-2">
+    <div className="mx-20">
+    <div className="flex pt-10.5 pb-10.5 pl-10 pr-10">
+      <div className="">
         <img
           src="/img/iit-madras.png"
           alt="IIT Madras"
           height="auto"
           width="auto"
-          className="h-44 w-44"
+          className=" h-45 w-45"
         />
       </div>
-      <div className="col-span-5">
+      <div className="ml-8">
         <div>
-          <p className="text-2xl font-black">
+          <p className="text-27 font-black">
             Indian Institute of Technology (IIT Madras)
           </p>
         </div>
-        <div className="flex my-4">
+        <div className="flex mt-5">
           <div className="flex">
             <div>
-              <p className="flex text-gray-400 my-4">
+              <p className="flex text-gray-400 mb-4.5">
                 <img
                   src="/img/location-icon.svg"
                   alt="Location"
@@ -44,7 +45,7 @@ const CollegeTitle = () => {
               </div>
             </div>
           </div>
-          <button className="flex my-auto bg-yellow-450 rounded-xl py-2.5 px-6 mx-6">
+          <button className="flex my-auto bg-yellow-450 rounded-xl py-2.5 px-6 mx-14.5">
             <img
               src="/img/write-review.png"
               alt="Write Review"
@@ -54,25 +55,22 @@ const CollegeTitle = () => {
             <span className="ml-1 font-black">Write Review</span>
           </button>
         </div>
-        <div className="flex text-sm mt-6">
+        <div className="flex text-sm mt-9">
             <p className="font-black">ESTD 2003</p>
             <p className="font-black mx-12">Private University</p>
             <p className="font-black">NAAC Rating - A</p>
         </div>
       </div>
-      <div className="col-span-3">
+      <div className="ml-9">
           <div className="flex justify-evenly text-xl my-4 text-center">
             <div className="">
-              {/* <button className="text-red-500 font-black">
-                  Link
-              </button> */}
                <div className="flex bg-blue-550 rounded-3xl h-12 w-36 justify-center items-center">
                  <img src={link} alt="link" />
                     <span className="text-xl text-white ml-2">Link</span>
                  </div>
               </div>
               
-              <div className="text-blue-550 font-black h-12 w-36 flex items-center">
+              <div className="text-blue-550 font-black h-12 w-36 flex items-center ml-11">
                 <img src={compare} alt="compare" className=" mr-1" height="33px" width="33px"/>
                  <p className="text-xl"> Compare   </p>
                </div>
@@ -85,12 +83,13 @@ const CollegeTitle = () => {
                 <img src="/img/brochures.png" alt="brochures" height="auto" width="15px" className="pt-1" />
                 <span className="mx-2 my-auto">Brochures</span>
             </button>
-            <button className="flex bg-blue-550 text-white rounded-xl h-11 w-44 items-center justify-center">
+            <button className="flex bg-blue-550 text-white rounded-xl h-11 w-44 items-center justify-center ml-8.5">
                 <img src="/img/apply-college-icon.png" alt="brochures" height="auto" width="15px" className="pt-1" />
                 <span className="mx-2 my-auto">Apply Now</span>
             </button>
           </div>
       </div>
+    </div>
     </div>
   );
 };

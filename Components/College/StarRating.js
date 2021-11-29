@@ -31,7 +31,7 @@ const StarRating = () => {
 
     return(
        
-        <div className="mt-8">
+        <div className="mt-8 w-825">
         <div className="flex justify-center items-center">
             <img src={ratingIcon} alt="ratingIcon" height="33px" width="33px" className=" mr-2.5" />
             <p className="text-blue-550 text-2xl font-black"> COLLEGE RATING

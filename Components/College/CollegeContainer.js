@@ -31,7 +31,7 @@ const CollegeContainer = () => {
       <Navbar />
       <CollegeTitle />
       <CollegeTabs setTab={setTab} tab={tab} />
-      <div className="grid grid-cols-7 gap-8  mx-30" >
+      <div className="grid grid-cols-7  mx-30" >
         <div className="col-span-5">
           {tab === "Information" && <InformationContainer />}
           {tab  ==="Courses" && <CoursesContainer/>}

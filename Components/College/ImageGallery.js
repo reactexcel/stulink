@@ -6,7 +6,7 @@ const ImageGallery = () => {
     <div className="my-9 p-8 shadow-lgOuter11 border w-825">
       <div className="flex items-center mb-9">
         <img src={imageGalleryIcon} alt="icon"  className="w-8 h-8" />
-        <p className=" text-2xl text-blue-550 ml-2 font-black">Image Gallery</p>
+        <p className=" text-2xl text-blue-550 text-25 ml-2 font-black">Image Gallery</p>
       </div>
 
       <div className="grid grid-cols-3 gap-8">

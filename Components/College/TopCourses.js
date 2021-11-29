@@ -40,7 +40,7 @@ const TopCourses = () => {
   
       <div className="flex items-center mb-9">
         <img src={topCourse} alt="icon"  className="w-8 h-8" />
-        <p className=" text-2xl text-blue-550 ml-2 font-black">Top Courses {"&"} Fees</p>
+        <p className=" text-2xl text-blue-550 text-25 ml-2 font-black">Top Courses {"&"} Fees</p>
       </div>
 
       <div className="grid grid-cols-2 gap-8 ">
@@ -58,6 +58,7 @@ const TopCourses = () => {
           );
         })}
       </div>
+      <p className="text-blue-550 text-right mt-5">View all Courses {">"}</p>
     </div>
   );
 };

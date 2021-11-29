@@ -33,7 +33,7 @@ const ListItem = ({ show, setShow, index }) => {
 const Faqs = () => {
   const [show, setShow] = useState(false);
   return (
-    <div className="my-9 rounded-xl shadow-2xl border">
+    <div className="my-9 rounded-xl shadow-2xl border w-825">
       <p className="text-blue-550 text-25 font-black mt-8 text-center flex justify-center items-center">
       <img  src={faqIcon} alt="faq icon" className=" h-5 w-5 mr-3"/>FAQs About IIT MADRAS
       </p>

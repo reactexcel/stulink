@@ -4,7 +4,7 @@ import { profileImg } from '../Common/Images';
 const StudentReview  = () =>  
 {
     return (
-        <div className="mt-9">
+        <div className="mt-9 w-825">
         <div className="flex items-center">
           <img src={profileImg} alt="profileImage" className=" h-16 w-16"></img>
            <div>

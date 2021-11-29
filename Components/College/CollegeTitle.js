@@ -1,6 +1,9 @@
 import React from "react";
 import { compare } from "../Common/Images"
 import { link } from "../Common/Images";
+import { establishIcon } from "../Common/Images";
+import { privateUniv } from "../Common/Images";
+import { naacRating } from "../Common/Images";
 
 const CollegeTitle = () => {
   return (
@@ -56,9 +59,18 @@ const CollegeTitle = () => {
           </button>
         </div>
         <div className="flex text-sm mt-9">
-            <p className="font-black">ESTD 2003</p>
-            <p className="font-black mx-12">Private University</p>
-            <p className="font-black">NAAC Rating - A</p>
+          <div className="flex items-center">
+             <img src={establishIcon} alt="icon" />
+            <p className="font-black ml-1">ESTD 2003</p>
+            </div>
+            <div className="flex items-center mx-12">
+              <img src={privateUniv} alt="icon"/>
+            <p className="font-black ml-1">Private University</p>
+            </div>
+            <div className="flex items-center">
+              <img src={naacRating} alt="naacIcon"/>
+            <p className="font-black ml-1">NAAC Rating - A</p>
+            </div>
         </div>
       </div>
       <div className="ml-9">

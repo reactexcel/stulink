@@ -50,6 +50,7 @@ module.exports = {
           xs11: '0.688rem',
           sm15: '0.9375rem',
           '27': '27px',
+          '25':'25px',
      },
      borderRadius: {
       sml: '0.25rem',
@@ -77,6 +78,7 @@ module.exports = {
       45:"180px",
       13:"50px",
       4.5:"18px",
+      70:"4.375rem",
     },
     width: {
       45:"180px",
@@ -89,6 +91,7 @@ module.exports = {
           lgOuter11: '0px 0px 11px rgba(0, 0, 0, 0.11)',
           lgOuter: '0px 0px 17px rgba(0, 0, 0, 0.07)',
           lgOuter20: '0px 0px 20px rgba(0, 0, 0, 0.07)',
+          inner: '0px 4px 10px rgba(0, 0, 0, 0.25)',
         },
         
         left: {

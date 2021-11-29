@@ -15,7 +15,7 @@ import { yellowUpIcon } from '../../Common/Images';
                  <p className="text-green-550 text-xl leading-9"> Commerce & Banking</p>
               </div>
 
-              <div className=" col-span-2 place-self-end">
+              <div className=" col-span-2 place-self-center">
                   <div className="flex">
                     <div className="flex mr-11 items-center">
                           <img src={yellowUpIcon} alt="upicon" className=" h-5 w-3"/>

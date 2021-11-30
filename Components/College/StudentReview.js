@@ -13,9 +13,9 @@ const StudentReview  = () =>
            </div>
         </div>
         <div>
-        <div className="h-1 w-1 z-50 bg-gray-100 p-2 relative mx-auto  transform rotate-45 top-2 right-96" />
-        <div className=" bg-gray-100 rounded-full p-10 shadow">    
-              <div className=" text-sm text-black mx-1.5">
+        <div className="h-1 w-1 z-50 bg-gray-280 p-3 relative mx-auto  transform rotate-45 top-3" style={{right:"362px"}} />
+        <div className=" bg-gray-280 rounded-xl50 p-10 shadow">    
+              <div className=" text-sm text-black mx-1.5 font-black">
               It is one of the best ranked engineering college in india. It has huge campus with clean green 
               environment and provides lot of opportunities to the students. I had given manpial University entrance
                exam to take admission here.This exam was tough but i cracked it (lot of determination need). You can 

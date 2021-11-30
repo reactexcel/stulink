@@ -64,7 +64,7 @@ const StarRating = () => {
                             ratingData.map((value, index) => {
                                 return (
                                     <div className="mb-6" key={index}>
-                                        <p className=" text-base text-gray-450">{value.name}</p>
+                                        <p className="text-base text-gray-450">{value.name}</p>
                                     </div>
                                 )
                             })

@@ -76,7 +76,7 @@ const CollegeTitle = () => {
         <div className="w-2/6 linkSection">
           <div className="flex justify-evenly text-xl my-4 text-center topLinkSection">
             <div className="">
-              <div className="flex bg-blue-550 rounded-3xl h-12.1 w-35 justify-center items-center">
+              <div className="flex bg-blue-550 rounded-3xl h-10 w-35 justify-center items-center">
                 <img src={link} alt="link" />
                 <span className="text-lg text-white ml-2">Link</span>
               </div>

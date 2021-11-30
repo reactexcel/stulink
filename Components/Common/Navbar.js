@@ -50,7 +50,7 @@ const SecondSection = ({ isLoggedin }) => {
                 alt="STULINK"
                 height="40px"
                 width="200px"
-                className=" h-16 "
+                className=" h-16 ml-4"
               />
             </Link>
           </div>

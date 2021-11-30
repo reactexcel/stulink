@@ -171,7 +171,7 @@ const AdmissionsContainer = () => {
           <StudentReview/>
           <StudentReview/>
           <StudentReview/>
-          <p className="text-center text-blue-550 flex justify-center items-center p-3">View more
+          <p className="text-center text-blue-550 flex justify-center items-center p-3">View more Reviews
          <img src={downIcon} alt="view more" className=" h-1.5 w-3 ml-1.5"/></p>
             </div>
         </div>

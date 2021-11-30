@@ -10,7 +10,7 @@ const FirstSection = () => {
   return (
     <div className="bg-black">
       <div className="navbarSection text-white text-base py-3">
-        <div className="flex justify-between md:mx-30 mx-2">
+        <div className="flex justify-between">
           <div>
             <p className="text-xs">DATE: 20th August 2021</p>
           </div>
@@ -41,32 +41,34 @@ const SecondSection = ({ isLoggedin }) => {
   };
   return (
     <div className="bg-blue-950">
-      <div className=" navbarSection">
-        <div className="grid md:grid-cols-7 grid-cols-1 md:p-3 p-1 md:gap-4 gap-12">
-          <div className="col-span-2 my-auto ml-12 flex justify-end place-self-center">
-            <Link href="/">
-              <img
-                src={logo}
-                alt="STULINK"
-                height="40px"
-                width="200px"
-                className=" h-16"
-              />
-            </Link>
+      <div className=" navbarSection navbarsection3">
+        <div className="flex py-1">
+          <div className='flex navbarSubSection1'>
+            <div className="my-auto flex w-1/4">
+              <Link href="/">
+                <img
+                  src={logo}
+                  alt="STULINK"
+                  height="40px"
+                  width="200px"
+                  className=" h-16 -ml-4"
+                />
+              </Link>
+            </div>
+            <div className="my-auto w-3/4">
+              <form onSubmit={handleSubmit}>
+                <input
+                  placeholder="SEARCH"
+                  className="focus:outline-none w-full text-lg p-3 rounded"
+                  value={search}
+                  onChange={handleSearch}
+                />
+              </form>
+            </div>
           </div>
-          <div className="col-span-3 my-auto">
-            <form onSubmit={handleSubmit}>
-              <input
-                placeholder="SEARCH"
-                className="focus:outline-none w-full text-lg p-3 rounded"
-                value={search}
-                onChange={handleSearch}
-              />
-            </form>
-          </div>
-          <div className="col-span-2 my-auto place-self-start">
+          <div className="my-auto flex justify-end navbarSubSection2">
             {!isLoggedin ? (
-              <div className="flex justify-center">
+              <div className="flex justify-center w-full pl-6">
                 <button className="flex text-white border border-white rounded-full text-2xl mx-2 py-2 px-4 transition duration-300 transform hover:-translate-y-1 hover:scale-105">
                   <img
                     src={login}
@@ -92,7 +94,7 @@ const SecondSection = ({ isLoggedin }) => {
                 </button>
               </div>
             ) : (
-              <div className="flex justify-between">
+              <div className="flex justify-between w-full pl-6 pr-4">
                 <div className="flex justify-between w-2/3 px-8 my-auto text-white">
                   <div>
                     <button onClick={() => setPopup("friends")}>
@@ -159,51 +161,51 @@ const SecondSection = ({ isLoggedin }) => {
 
 const ThirdSection = () => {
   return (
-    <div className=' bg-blue-850'>
-    <div className="navbarSection">
-      <div className="py-3.5 md:px-54.25 px-4 flex md:flex-row flex-col justify-between text-base text-white">
-        <Link href="/">
-          <img
-            className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform h-4.5 w-4.5"
-            src={home}
-            alt="Home"
-            width="15px"
-            height="4px"
-          />
-        </Link>
-        <Link href="/college">
+    <div className=" bg-blue-850">
+      <div className="navbarSection3">
+        <div className="py-3.5 flex md:flex-row flex-col justify-between text-base text-white">
+          <Link href="/">
+            <img
+              className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform h-4.5 w-4.5"
+              src={home}
+              alt="Home"
+              width="15px"
+              height="4px"
+            />
+          </Link>
+          <Link href="/college">
+            <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
+              Colleges
+            </p>
+          </Link>
           <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
-            Colleges
+            Exam
           </p>
-        </Link>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
-          Exam
-        </p>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
-          Courses
-        </p>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
-          Jobs
-        </p>
-        <Link href="/news">
           <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
-            News
+            Courses
           </p>
-        </Link>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
-          Chat Room
-        </p>
-        <Link href="/members">
           <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
-            Member
+            Jobs
           </p>
-        </Link>
-        <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
-          Help Center
-        </p>
+          <Link href="/news">
+            <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
+              News
+            </p>
+          </Link>
+          <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
+            Chat Room
+          </p>
+          <Link href="/members">
+            <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
+              Member
+            </p>
+          </Link>
+          <p className="cursor-pointer transition duration-300 hover:-translate-y-1 hover:scale-105 transform text-base">
+            Help Center
+          </p>
+        </div>
       </div>
     </div>
-  </div>
   );
 };
 

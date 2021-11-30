@@ -3,7 +3,7 @@ import { about } from "../Common/Images";
 
 const AboutCollege = () => {
   return (
-    <div className="shadow-lgOuter11 py-8   my-9 w-825">
+    <div className="shadow-lgOuter11 py-8   my-9 w-full">
       <div className="flex items-center px-8 ">
         <img
           src={about}

@@ -30,7 +30,7 @@ const ListItem = () => {
 
 const TrendingAdmissions = () => {
   return (
-   <div className="mt-6 w-338">
+   <div className="mt-6">
       <div className="shadow rounded-2xl border  ">
         <p className="bg-green-550 text-white text-center text-base p-6 rounded-t-2xl">
           <img src={trandingUpIcon} alt="trandingUpIcon" className="inline-block" />  <span className=" pl-2">Trending Admissions </span>

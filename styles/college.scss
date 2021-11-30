@@ -1,0 +1,49 @@
+.college{
+    .collegeTitle{
+        max-width: 1360px;
+        margin: 40px auto;
+        padding-left: 80px;
+        padding-right: 80px;
+        .iitSection{
+            padding:0 12px;
+        }
+        .linkSection{
+            padding-left: 6px;
+            .topLinkSection{
+                margin: 36px 0 19px 0;
+            }
+        }
+    }
+    .collegeTabs{
+        max-width: 1360px;
+        padding-left: 90px;
+        padding-right: 90px;
+        margin: auto;
+        .tab{
+            padding: 21px;
+        }
+    }
+    .collegeMainSection{
+        max-width: 1360px;
+        padding-left: 51.5px;
+        padding-right: 51.5px;
+        margin: auto;
+        .collegeMainInnerSection{
+            padding: 0 23.5px;
+        }
+        .collegeMainInnerSection1{
+            width: 69.4%;
+        }
+        .collegeMainInnerSection2{
+            width: 30.6%;
+        }
+        @media(max-width:1350px){
+            .collegeMainInnerSection1{
+                width: 100%;
+            }
+            .collegeMainInnerSection2{
+                width: 100%;
+            }
+        }
+    }
+}

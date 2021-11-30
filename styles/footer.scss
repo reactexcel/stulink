@@ -3,4 +3,19 @@
     margin: auto;
     padding-right: 80px;
     padding-left: 80px;
+    .footerSection1{
+        padding-top: 98px;
+    }
+    .copyrightSection{
+        font-size: 14.52px;
+        padding-bottom: 59px;
+        .policySection{
+            .policyItem{
+                padding: 0 25px;
+            }
+        }
+        .stuLink{
+            padding-right: 68px;
+        }
+    }
 }

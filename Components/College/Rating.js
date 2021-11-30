@@ -5,7 +5,7 @@ import { star } from "../Common/Images";
 
 const Rating = () => {
   return (
-    <div className="shadow-lgOuter11 p-8 rounded-xl mt-7 w-825">     
+    <div className="shadow-lgOuter11 p-8 rounded-xl mt-7 w-full">     
       <div className="flex items-center">
         <img src={rating} alt="icon" className=" h-8 w-8"/>
         <p className=" text-2xl text-blue-550 ml-2 font-black text-25">Rating</p>

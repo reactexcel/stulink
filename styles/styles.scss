@@ -1,4 +1,7 @@
 @import "./fonts";
+@import './college.scss';
+@import './navbar.scss';
+@import './footer.scss';
 
 .custom-label input:checked + svg {
     display: block !important;

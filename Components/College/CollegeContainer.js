@@ -24,15 +24,15 @@ import PlacementContainer from "./Placements.js/PlacementContainer";
 const CollegeContainer = () => {
   const [tab, setTab] = useState("Information");
   return (
-    <div>
+    <div className='college'>
       <Head>
         <title>College | Stulinks</title>
       </Head>
       <Navbar />
       <CollegeTitle />
       <CollegeTabs setTab={setTab} tab={tab} />
-      <div className="grid grid-cols-7  mx-30" >
-        <div className="col-span-5">
+      <div className="collegeMainSection flex flex-wrap" >
+        <div className="collegeMainInnerSection collegeMainInnerSection1 flex flex-wrap">
           {tab === "Information" && <InformationContainer />}
           {tab  ==="Courses" && <CoursesContainer/>}
           {tab  === "Admissions" && <AdmissionsContainer/>}
@@ -45,7 +45,7 @@ const CollegeContainer = () => {
           {tab === "Q&A" && <QandAContainer/>}
            
         </div>
-        <div className="col-span-2">
+        <div className="collegeMainInnerSection collegeMainInnerSection2">
           { tab === "Information"  && 
              <>
              <TrendingAdmissions />

@@ -36,7 +36,7 @@ const courseData = [
 
 const TopCourses = () => {
   return (
-    <div className="shadow-lgOuter11 p-8 border my-9 rounded w-825">
+    <div className="shadow-lgOuter11 p-8 border my-9 rounded w-full">
   
       <div className="flex items-center mb-9">
         <img src={topCourse} alt="icon"  className="w-8 h-8" />

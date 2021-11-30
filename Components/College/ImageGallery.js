@@ -3,7 +3,7 @@ import { imageGalleryIcon} from "../Common/Images"
 
 const ImageGallery = () => {
   return (
-    <div className="my-9 p-8 shadow-lgOuter11 border w-825">
+    <div className="my-9 p-8 shadow-lgOuter11 border w-full">
       <div className="flex items-center mb-9">
         <img src={imageGalleryIcon} alt="icon"  className="w-8 h-8" />
         <p className=" text-2xl text-blue-550 text-25 ml-2 font-black">Image Gallery</p>

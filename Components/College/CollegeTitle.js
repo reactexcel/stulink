@@ -76,7 +76,7 @@ const CollegeTitle = () => {
       <div className="ml-9">
           <div className="flex justify-evenly text-xl my-4 text-center">
             <div className="">
-               <div className="flex bg-blue-550 rounded-3xl h-12 w-36 justify-center items-center">
+               <div className="flex bg-blue-550 rounded-3xl h-12.1 w-35 justify-center items-center">
                  <img src={link} alt="link" />
                     <span className="text-xl text-white ml-2">Link</span>
                  </div>

@@ -82,6 +82,7 @@ module.exports = {
         13: "50px",
         4.5: "18px",
         70: "4.375rem",
+        50:"50px",
       },
       width: {
         45: "180px",
@@ -90,6 +91,7 @@ module.exports = {
         338: "340px",
         4.5: "18px",
         35: "142px",
+        250:"250px",
       },
       boxShadow: {
         lgOuter11: "0px 0px 11px rgba(0, 0, 0, 0.11)",

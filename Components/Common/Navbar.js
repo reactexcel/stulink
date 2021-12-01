@@ -48,8 +48,8 @@ const SecondSection = ({ isLoggedin }) => {
               <img
                 src={logo}
                 alt="STULINK"
-                height="50"
-                width="250"
+                height="50px"
+                width="250px"
               />
             </Link>
           </div>
